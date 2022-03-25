@@ -1,0 +1,32 @@
+{
+  "name": "uber-project",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000U\u0000b\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayktiger/Uber.git"
+  },
+  "author": "Konstantin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayktiger/Uber/issues"
+  },
+  "homepage": "https://github.com/sayktiger/Uber#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.9"
+  }
+}
