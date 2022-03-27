@@ -1,24 +1,31 @@
 .title{
-    font-family: 'Poppins';
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 36px;
     color: #000000;
     line-height: 60px;
-    &_fz12{
-        font-size: 12px;
-        line-height: 18px;
-    }
-    &_fz14{
-        font-size: 14px;
-        line-height: 21px;
+    &_fz48{
+        font-weight: 700;
+        font-size: 48px;
     }
     &_fz16{
         font-size: 16px;
         line-height: 24px;
         font-weight: 700;
     }
-    &_fz48{
+    &_fz14{
+        font-size: 14px;
+        line-height: 21px;
         font-weight: 700;
-        font-size: 48px;
     }
+    &_fz12{
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+    
+    
+    
+    
 }

@@ -54,8 +54,8 @@ gulp.task(`scripts`,function(){
 });
 
 gulp.task(`fonts`,function(){
-    return gulp.src("src/font/**/*")
-        .pipe(gulp.dest("dist/font"))
+    return gulp.src("src/fonts/**/*")
+        .pipe(gulp.dest("dist/fonts"))
         .pipe(browserSync.stream());
 });
 gulp.task(`icons`,function(){
