@@ -11,3 +11,11 @@
         left:0;
     }
 }
+
+@mixin before_cirle_center{
+    &:before{
+        top:-6px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+}

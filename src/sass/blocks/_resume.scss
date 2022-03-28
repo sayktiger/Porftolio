@@ -4,11 +4,7 @@
     text-align: center;
     position: relative;
     @include before_circle;
-    &:before{
-        top:-6px;
-        left:50%;
-        transform: translateX(-50%);
-    }
+    @include before_cirle_center;
     }
     &__subtitle{
         text-align: center;
