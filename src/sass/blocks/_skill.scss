@@ -40,4 +40,44 @@
             }
         }
     }
+    &__rating{
+        margin-top: 128px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        justify-content: space-between;
+        align-content: space-between;
+        row-gap: 35px;
+        &-item{
+            display: grid;
+            grid-template: minmax(21px, auto) 14px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+            &_title{
+                position: relative;
+                @include before_circle;
+                padding-left: 14px;
+                &:before{
+                    top:-40%;
+                }
+            }
+            &-counter{
+                font-size: 14px;
+                line-height: 21px;
+                
+            }
+            &-line{
+                width: 350px;
+                height: 14px;
+                background-color: #E8E4DE;
+                border-radius: 4px;
+                grid-column: 1 / 3;
+                span {
+                    display: block;
+                    height: 100%;
+                    background-color: $main-color;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
 }
