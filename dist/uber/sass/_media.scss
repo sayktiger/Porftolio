@@ -1,0 +1,381 @@
+@media(max-width: 1200px) {
+    nav {
+        .menu {
+            .menu_item {
+                .menu_link {
+                    font-size: 13px;
+                }
+
+                &::before {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+    .promo {
+        .promo_title {
+            font-size: 50px;
+        }
+    }
+
+    .advantage {
+        .card_wrapper-text {
+            max-width: 300px;
+        }
+    }
+
+    .mobile {
+        .mobile_item {
+            margin: 12px auto;
+        }
+    }
+
+    .requier {
+        .requier_list li {
+            font-size: 15px;
+        }
+    }
+
+    .footer {
+        &_social {
+            width: 190px;
+        }
+
+        &_links {
+            width: 325px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    nav {
+        .menu {
+            .menu_item {
+                .menu_link {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    .subheader {
+        &_logo {
+            img {
+                width: 100%;
+            }
+        }
+
+        .subheader_official {
+            font-size: 12px;
+        }
+
+        .subheader_telephone {
+            font-size: 19px;
+        }
+
+        .subheader_button {
+            width: 100%;
+            height: 40px;
+            margin-top: 21px;
+        }
+    }
+
+    .promo {
+        .promo-text {
+            .promo_title {
+                font-size: 41px;
+            }
+
+            .promo_subtitle {
+                margin-top: 10px;
+                font-size: 26px;
+            }
+
+        }
+
+
+    }
+
+    .advantage {
+        .title {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        &_card {
+            flex-direction: column;
+            align-items: center;
+
+            .card_title {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .cars {
+        img {
+            width: 100%;
+        }
+    }
+
+    .footer_mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        padding: 0px;
+    }
+    .promo .promo_btn{
+        margin: 50px auto;
+    }
+    .cars {
+        padding: 57px 0 0px 0;
+    }
+    nav .menu .menu_item .menu_link {
+        font-size: 20px;
+    }
+    nav{
+        .menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 90%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            transition: 0.6s all;
+        }
+        .menu_active {
+            left: 0;
+        }
+
+        .menu_item {
+            padding: 0px;
+            margin-top: 15px;
+        }
+        
+        
+        .hamburger {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            display: block;
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 2px;
+                transition: 0.5s all;
+            }
+            &_active{
+                span{
+                    margin-bottom: -2px;
+                    &:nth-child(1){
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+    .xs-hidden{
+        display: none;
+    }
+    .subheader{
+        .xs-visable{
+            display: block;
+        }
+        .subheader_telephone{
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .subheader_button{
+            margin-top: 10px;
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .footer_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        .footer_wrapper>div{
+            width: 100%;
+            .footer_social{
+                max-width: 180px;
+                display: flex;
+            }
+            .footer_links{
+                max-width: 400px;
+                margin: 20px 0 20px 0;
+            }
+        }
+        .footer_links {
+            margin: 10px 20px 10px -50px;
+        }
+        .footer_mobile{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            img{
+                margin-left:8px;
+            }
+        }
+        
+    }
+    
+    
+
+}
+
+@media(max-width: 575px){
+    nav .menu .menu_item {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    nav .menu .menu_item .menu_link{
+        display: block;
+    }
+    nav .hamburger{
+        right: 30px;
+    }
+    .promo{
+        min-height: 400px;
+        padding: 53px 0 32px 0;
+    }
+    .promo .promo-text .promo_title{
+        font-size: 30px;
+    }
+    .promo .promo-text .promo_subtitle{
+        font-size: 20px;
+    }
+    .promo .promo_descr{
+        display: none;
+    }
+    .advantage .title{
+        font-size: 16px;
+    }
+    .advantage_card{
+        margin-right: 0;
+    }
+    .advantage{
+        padding-bottom: 0px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .mobile .mobile_subtitle{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .mobile{
+        .row{
+            margin: 0;
+        }
+    }
+    .requier_wrapper{
+        width: 100%;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 574px){
+    .row{
+        margin: 0;
+    }
+    
+    nav {
+        position: fixed;
+        z-index: 5;
+        height: 30px;
+        width: 100%;
+        top:0;
+    }
+    .subheader{
+        width: 100%;
+    }
+    .subheader .subheader_button{
+        width: 116px;
+        height: 28px;
+        font-size: 10px;
+    }
+    .subheader .subheader_telephone{
+        font-size: 10px;
+    }
+    .subheader .subheader_official{
+        display: none;
+    }
+    .mobile .mobile_item{
+        padding: 0;
+    }
+
+    footer{
+        width: 100%;
+        .footer_links_main a{
+            font-size: 12px;
+        }
+        .footer_links_sub a{
+            font-size: 9px;
+        }
+        .footer_wrapper .footer_links {
+            width: 100%;
+            margin:8px 20px 10px -100px;
+            
+        }
+        .footer_social{
+            margin-left: -50px;
+        }
+        .footer_wrapper .footer_mobile{
+            width: 100%;
+        }
+        .footer_divider{
+            width: 100%;
+        }
+    }
+    .logo-wrapper{
+        padding-left: 50px;
+        width: 130px;
+        height: 15px;
+    }
+    .subheader{
+        width: 100%;
+        height: 60px;
+        margin-top: 30px;
+    }
+    .subheader .subheader_telephone{
+        margin-top:1px;
+    }
+    .subheader .subheader_logo{
+        margin-top: 17px;
+    }
+
+    .mobile .mobile_item{
+        width: 100%;
+    }
+
+    
+}

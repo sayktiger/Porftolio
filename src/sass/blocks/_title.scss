@@ -29,6 +29,19 @@
         line-height: 18px;
         font-weight: 500;
     }
+
+    &_h2_center{
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        @include before_cirle_center;
+    }
+    &_div_center{
+        text-align: center;
+    }
+    &_divider{
+        margin: 0 auto;
+    }
     
     
     
