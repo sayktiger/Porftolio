@@ -98,7 +98,17 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/Photo.png" alt="Фотография">
+                    <!-- <img srcset="img/Photo_mobile.png 300w,
+                                 img/Photo.png 400w"
+                         sizes="(max-width: 576px) 280px,
+                                (min-width: 577px) 400px"
+                         src="img/Photo.png" alt="Фотография"> -->
+
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/Photo_mobile.png">
+                            <source media="(min-width: 577px)" srcset="img/Photo.png">
+                            <img src="img/Photo.png" alt="Фотография">
+                        </picture>
                 </div>
                 
                 <div class="about__descr">
@@ -349,7 +359,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_h2_center">Портфолио</h2>
             <div class="title title_fz36 portfolio__subtitle title_div_center">Мои работы</div>
@@ -382,9 +392,9 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="price">
+    <section class="price">
         <div class="container">
             <h2 class="title title_fz16 title_h2_center">Прайс-лист</h2>
             <div class="divider title_divider divider_m"></div>
@@ -446,9 +456,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="conctacts__photo">
@@ -483,7 +493,7 @@
                             <label for="email">Ваша почта</label>
                         </div>
 
-                        <div class="contacts__text-area">
+                        <div class="contacts__textarea">
                             <textarea id="text" name="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
@@ -491,7 +501,8 @@
                             <button class="btn contacts__btn">Отправить сообщение</button>
                             <div class="contacts__police">
                                 <input required type="checkbox" name="checkbox" id="checkbox">
-                                <span>Я согласен(а) с <a target="_blank" href="policy.html">политикой конфиденциальности</a></span>
+                                <div class="contacts__policy"><span>Я согласен(а) с <a target="_blank" href="policy.html">политикой конфиденциальности</a></span>
+                                </div>
                             </div>
                         </div>
                         
@@ -499,7 +510,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+    
     <!-- script -->
     <script src="js/script.js"></script>
 </body>
