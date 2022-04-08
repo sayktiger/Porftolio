@@ -9,7 +9,12 @@
         grid-template-columns: 400px 585px;
         justify-content: space-between;
     }
-    
+    &__social{
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
     &__photo{
         img{
             width: 100%;
@@ -92,7 +97,7 @@
         width: 219px;
         height: 45px;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 12px;
     }
     
 }

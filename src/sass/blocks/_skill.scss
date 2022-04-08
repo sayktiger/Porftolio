@@ -29,6 +29,13 @@
                 align-items: center;
                 min-height: 65px;
             }
+            &_bigimg{
+                height: 70px;
+                width: 70px;
+                img{
+                    width: 100%;
+                }
+            }
             &_title{
                 font-weight: 700;
                 margin: 20px 0 15px 0;
