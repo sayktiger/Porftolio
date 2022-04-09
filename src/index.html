@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <aside class="sidepanel">
         <a href="#" class="sidepanel__link ">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -606,15 +605,15 @@
                     </div>
 
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
-                    <form action="#" class="contacts__form">
+                    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')" class="contacts__form">
                         <div class="contacts__input">
                             <input required id="name" name="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
 
                         <div class="contacts__input">
-                            <input required id="email" name="email" type="email">
-                            <label for="email">Ваша почта</label>
+                            <input required id="phone" name="phone" type="tel">
+                            <label for="email">Ваш номер телефона</label>
                         </div>
 
                         <div class="contacts__textarea">
@@ -622,7 +621,7 @@
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">
-                            <button class="btn contacts__btn">Отправить сообщение</button>
+                            <button type="submit" class="btn contacts__btn">Отправить сообщение</button>
                             <div class="contacts__police">
                                 <input required type="checkbox" name="checkbox" id="checkbox">
                                 <div class="contacts__policy"><span>Я согласен(а) с <a target="_blank"
@@ -638,6 +637,34 @@
     </section>
 
     <!-- script -->
+    <script>
+        // Отправка данных на сервер
+        function send(event, php){
+        console.log("Отправка запроса");
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        var req = new XMLHttpRequest();
+        req.open('POST', php, true);
+        req.onload = function() {
+            if (req.status >= 200 && req.status < 400) {
+            json = JSON.parse(this.response); // Ебанный internet explorer 11
+                console.log(json);
+                
+                // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+                if (json.result == "success") {
+                    // Если сообщение отправлено
+                    alert("Спасибо, Ваше сообщение отправленно. Я свяжусь с вами в ближайшее время.");
+                } else {
+                    // Если произошла ошибка
+                    alert("Ошибка. Сообщение не отправлено");
+                }
+            // Если не удалось связаться с php файлом
+            } else {alert("Ошибка сервера. Номер: "+req.status);}}; 
+        
+        // Если не удалось отправить запрос. Стоит блок на хостинге
+        req.onerror = function() {alert("Ошибка отправки запроса");};
+        req.send(new FormData(event.target));
+        }
+    </script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();

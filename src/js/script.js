@@ -229,7 +229,8 @@ const lineBarOne = new ProgressBar.Line(".line-bar-1", {
             duration: 1000
           });
     }
-  })
+  });
+
 });
 
 
