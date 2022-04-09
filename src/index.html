@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <div class="preloader preloader-3">
+        <svg viewBox="-2000 -1000 4000 2000">
+        <path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+        <use xlink:href="#inf" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+    </svg>
+    </div>
     <aside class="sidepanel">
         <a href="#" class="sidepanel__link ">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -637,6 +643,11 @@
     </section>
 
     <!-- script -->
+    <script>
+         window.onload = function() {
+            document.querySelector('.preloader').classList.add("preloader-remove");
+        };
+    </script>
     <script>
         // Отправка данных на сервер
         function send(event, php){

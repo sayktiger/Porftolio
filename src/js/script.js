@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
     V = 0.4; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 
-
+ 
 hamburger.addEventListener(`click`, () => {
     menu.classList.add(`menu__active`);
 });

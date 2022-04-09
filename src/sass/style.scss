@@ -28,6 +28,43 @@
     margin-top: 25px;
 }
 
+.preloader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+	background: #fff;
+	transition: all 0.5s;
+	opacity: 1;
+}
+.preloader-remove {
+	opacity: 0;
+	z-index: -10;
+}
+.preloader-3 svg {
+    max-width: 25em;
+    border-radius: 3px;
+    background: #FFF;
+    fill: none;
+    stroke: #BFE2FF;
+    stroke-linecap: round;
+    stroke-width: 12%
+}
+.preloader-3 use {
+    stroke: $main-color;
+    animation: preloader-3-a 2s linear infinite;
+}
+@keyframes preloader-3-a {
+    to { 
+        stroke-dashoffset: 0px 
+    } 
+}
+
 //block
 @import "blocks/promo";
 @import "blocks/sidepanel";
