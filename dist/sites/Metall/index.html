@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Металл 38</title>
+		<link rel="icon" href="images/favicon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fontawesome.min.css">
+		<link rel="stylesheet" href="css/fakeLoader.min.css">
+		<link rel="stylesheet" href="css/hoverbuttons.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<!-- loader -->
+		<div class="fakeLoader"></div>
+		<!-- end loader -->
+
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Заказать звонок</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		       <div class="messages"></div>
+			        <div class="form-group">
+					    
+					    <input class="form-control" type="text" id="email" placeholder="Введите ваш email"/>
+					</div>
+					
+					<div class="form-group">
+					    <span>Телефон:</span><br>
+					    <input class="form-control" type="text" id="text" placeholder="Введите вашу ссылку на канал"/>
+					</div>    
+				    
+				    <div class="form-group">
+					    <span>Ваш вопрос:</span><br>
+					    <textarea class="form-control" id="text_comment" placeholder="Введите ваш вопрос"></textarea>
+					</div>    
+
+				    <input class="button" type="button" value="Отправить" id="btn_submit" />   
+				    <div id="erconts"></div>
+
+				  </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+		</div>
+
+		
+		
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">Металлист 38</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars "></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#O_nas">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Nach_uslg">Наши услуги</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Otziv">Отзывы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio_1">Портфолио</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navbar -->
+		
+		<!-- home intro -->
+		<div class="wrapper-intro">
+			<div class="home-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col col-sm-12 col-md-10 col-12">
+						<div class="content">
+							<div class="content-text">
+								<h5>Профессиональные решения</h5>
+								<h2>Металлист 38</h2>
+								<h6>Мы предлагаем изготовление, а так же установку металлоконструкций в Иркутске, Шелехово,Ангарске и Байкальном Тракте.</h6>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Оставить заявку</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end end intro -->
+
+		<!-- services -->
+		<div class="services section bg-grey" id="O_nas">
+			<div class="container">
+				<div class="title-section">
+					<h3>Металлист 38</h3>
+					<p><span class="line"></span>Почему стоит выбрать именно нас</p>
+				</div>
+				<div class="row">
+					<div class="col col-md-6 col-sm-12 col-12">
+						<div class="content">
+							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+							<h5>Честно</h5>
+							<p class="mb-0">Все материалы соответствую заявленным характеристикам. </p>
+						</div>
+					</div>
+					<div class="col col-md-6 col-sm-12 col-12">
+						<div class="content content-center">
+							<i class="fa fa-diamond" aria-hidden="true"></i>
+							<h5>Надежно</h5>
+							<p class="mb-0">Качество выполнение вашего заказа.</p>
+						</div>
+					</div>
+					<div class="col col-md-6 col-sm-12 col-12">
+						<div class="content">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<h5>Профессионально</h5>
+							<p class="mb-0">Наша команда сделает все максимально профессионально.</p>
+						</div>
+					</div>
+					<div class="col col-md-6 col-sm-12 col-12">
+						<div class="content">
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+							<h5>Дешевле</h5>
+							<p class="mb-0">Заказывать у нас дешевле , чем у наших конкурентов.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end services -->
+
+		<!-- about -->
+		<div class="about bg-grey" >
+			<div class="container">
+				<div class="row no-gutters">
+				<div class="col col-md-6 col-sm-12">
+					<img src="images/about.jpg" alt="" class="w-100">
+				</div>
+				<div class="col col-md-6 col-sm-12">
+					<div class="content">
+						<h3>О нашей Компании</h3>
+						<span><i class="fa fa-paper-plane"></i>Металлист 38 реализует профессиональные решения.</span>
+						<span><i class="fa fa-paper-plane"></i>Команда высококвалифицированных специалистов, работающая на передовом высокотехнологичном оборудовании, способна решить любые задачи.</span>
+						<span><i class="fa fa-paper-plane"></i>Мы проектируем и изготавливаем изделия из металла на самых выгодных условиях: только экологически безопасные материалы, уникальная эстетика каждой модели, идеальное соотношение цены и качества.</span>
+						<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- emd about -->
+
+		
+		
+		<!-- latest blog -->
+		<div class="latest-blog section bg-grey" id="Nach_uslg">
+			<div class="container">
+				<div class="title-section">
+					<h3>Наши услуги</h3>
+					<p><span class="line"></span>Мы занимаем лидирующие позиции на рынке изделий из металла.</p>
+				</div>
+				<div class="row">
+					<div class="col col-sm-12 col-12 col-md-4">
+						<div class="content">
+							<img src="images/blog1.jpg" alt="Заборы" class="w-100">
+							<div class="content-text">
+								<h5>Заборы</h5>
+								<span>от 1 500 р.</span>
+								<span>Долговечность</span>
+								<p class="mb-0">Прочный, благодаря секциям с рёбрами жёсткости, пропускает много света и воздуха, быстро в монтаже, доступен по цене. Кроме того, он красив и сможет послужить каркасом для декоративных растений, например, девичьего винограда.</p>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Рассчитать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col col-sm-12 col-12 col-md-4">
+						<div class="content">
+							<img src="images/blog2.jpg" alt="Автонавесы" class="w-100">
+							<div class="content-text">
+								<h5>Автонавесы</h5>
+								<span>от 3 300 р./м2</span>
+								<span>Надежность</span>
+								<p class="mb-0">Навесы для автомобилей представляют собой сварную конструкцию, выполненную, как правило, из стальной профильной трубы и покрытую сотовым поликарбонатом, профнастилом, либо другим альтернативным кровельным материалом.</p>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Рассчитать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col col-sm-12 col-12 col-md-4">
+						<div class="content">
+							<img src="images/blog3.jpg" alt="Ворота" class="w-100">
+							<div class="content-text">
+								<h5>Ворота</h5>
+								<span>от 35 000 р.</span>
+								<span>Удобство</span>
+								<p class="mb-0">Удобство эксплуатации, надежная конструкция и эстетичный вид — вот причины, по которым откатные ворота так популярны среди владельцев жилых, промышленных и других объектов.Плавный и бесшумный ход, высокие показатели надежности.</p>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Рассчитать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col col-sm-12 col-12 col-md-4">
+						<div class="content">
+							<img src="images/blog4.jpg" alt="Мебельный лофт" class="w-100">
+							<div class="content-text">
+								<h5>Мебельный лофт</h5>
+								<span>от 2500 р.</span>
+								<span>Эстетичность</span>
+								<p class="mb-0">Главная особенность стиля лофт – возможность создания в чердачной неформальности максимум функциональности и комфорта. Вместо обыденности нестандартные решения, смелые формы.</p>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Рассчитать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col col-sm-12 col-12 col-md-4">
+						<div class="content">
+							<img src="images/blog5.jpg" alt="Лестницы" class="w-100">
+							<div class="content-text">
+								<h5>Лестницы</h5>
+								<span>от 4000 р./м.п.</span>
+								<span>Индивидуальный подход</span>
+								<p class="mb-0">Высокое качество материала обеспечивает прекрасную долговечность гарантированно, неотразимый вид изделия.Сильнейшая команда знает как максимально оптимизировать стоимость изделия, чтобы вы не переплачивали.</p>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Рассчитать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col col-sm-12 col-12 col-md-4">
+						<div class="content">
+							<img src="images/blog6.jpg" alt="Беседки" class="w-100">
+							<div class="content-text">
+								<h5>Беседки</h5>
+								<span>от 30000 р./шт.</span>
+								<span>Оптимальная стоимость</span>
+								<p class="mb-0">Беседки из металла – практичные и красивые украшения для каждого вашего дома, дачного участка, санатория, любых закрытых или открытых территорий, где есть зона отдыха. Сделанны из лучших материалов.</p>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Рассчитать стоимость</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end latest blog -->
+
+		<div class="latest-blog section bg-grey" id="Otziv">
+			<div class="container">
+				<div class="title-section">
+					<h3>Отзывы</h3>
+					<p><span class="line"></span>Мнение наших клиентов</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="serviceBox">
+							<div class="service-icon">
+						 		<img src="https://os-house.ru/images/%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80.png" class="img-responsive w-100">
+						 	</div>
+						 	<div class="service-content">
+						 		 <h3>Алексей Лотник</h3>
+								 <span>Беседка на участок<span>
+								 <p>"Выражаю благодарность Игорю за помощь в демонтаже старой беседки и установку новой. Спокойно и со знанием дела решили все вопросы.
+								 Удачи ребятам из Металлист 38."</p>
+						 	</div>
+						</div>
+					</div>
+
+					 <div class="col-md-4 col-sm-6">
+					 	<div class="serviceBox">
+					 		<div class="service-icon">
+					 			<img src="https://sanitarnaya-knizhka.ru/wp-content/uploads/2019/12/xtest1.png.pagespeed.ic_.bxrocoeonl.png" class="img-responsive w-100">
+					 		</div>
+						 	<div class="service-content">
+						 		<h3>Кристина Устьян</h3>
+						 		<span>Металлический забор</span>
+						 		<p>"Заказала забор у Металлист 38. После договора прошло всего две недели и забор уже стоял у меня на участке.Отменный вид! Буду обращаться снова, закажу навес для автомобиля."</p>
+						 	</div>
+					 	</div>
+					 </div>
+
+					 <div class="col-md-4 col-sm-6">
+					 	<div class="serviceBox">
+					 		<div class="service-icon">
+					 			<img src="https://www.bosforkmv.ru/wp-content/uploads/2019/10/marina-kalabuhova-1024x1024.png" class="img-responsive w-100">
+					 		</div>
+					 		<div class="service-content">
+					 			<h3>Анастасия Журба</h3>
+					 			<span>Лестница в дом</span>
+					 			<p>"Хочу сказать "Спасибо" Игорю и ребятам за проделанную работу.Поставили нам лестницу по нашему дизайну. Не могу нарадоваться, как она подошла по цвету в наш дом. Буду обращаться!"</p>
+					 		</div>
+					 	</div>
+					 </div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- our work -->
+		<div class="our-work section" id="portfolio_1">
+			<div class="container">
+				<div class="title-section">
+					<h3>Портфолио</h3>
+					<p><span class="line"></span>Выполненные работы</p>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content w-100">
+							<a href="images/work1.jpg" class="portfolio-popup">
+								<img src="images/work1.jpg">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content ">
+							<a href="images/work2.jpg" class="portfolio-popup">
+								<img src="images/work2.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work3.jpg" class="portfolio-popup">
+								<img src="images/work3.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work4.jpg" class="portfolio-popup">
+								<img src="images/work4.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work5.jpg" class="portfolio-popup">
+								<img src="images/work5.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work6.jpg" class="portfolio-popup">
+								<img src="images/work6.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work7.jpg" class="portfolio-popup">
+								<img src="images/work7.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work8.jpg" class="portfolio-popup">
+								<img src="images/work8.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-12">
+						<div class="content">
+							<a href="images/work9.jpg" class="portfolio-popup">
+								<img src="images/work9.jpg" alt="">
+								<div class="caption">
+									<h6>Металлист 38</h6>
+									<p>Увеличить</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end our work -->
+
+			<div class="services section bg-grey" id="contact">
+				<div class="container">
+					<div class="title-section">
+						<h3>Контакты</h3>
+						<p><span class="line"></span>Как с нами связаться ?</p>
+					</div>
+					<div class="row">
+						<div class="col col-md-6 col-sm-12 col-12">
+							<div class="content">
+								<i class="fa fa-volume-control-phone fa-3x" aria-hidden="true"></i>
+								<h5>Телефон:</h5>
+								<span><a href="tel:+79025776756"><h6>+7-902-577-67-56</h6></a><a href="tel:678756"><h6>67-87-56</h6></a></span>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Консультация</button>
+							</div>
+						</div>
+						<div class="col col-md-6 col-sm-12 col-12">
+							<div class="content content-center">
+								<i class="fa fa-instagram fa-3x "aria-hidden="true"></i>
+								<h5>Instagram и WhatsApp:</h5>
+								<span><a href="https://www.instagram.com/stoliarnomebelnaia/?r=nametag"><h6>@stoliarnomebelnaia</h6></a><a href="https://wa.me/+79025776756"><h6>+7-902-577-67-56</h6></a></span>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Консультация</button>
+							</div>
+						</div>
+						<div class="col col-md-6 col-sm-12 col-12">
+							<div class="content">
+								<i class="fa fa-envelope-open-o fa-3x" aria-hidden="true"></i>
+								<h5>Почта</h5>
+								<a href="mailto:Info@tolmachev.sv"><h6>Info@tolmachev.sv</h6></a>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Консультация</button>
+							</div>
+						</div>
+						<div class="col col-md-6 col-sm-12 col-12">
+							<div class="content content-center">
+								<i class="fa fa-map fa-3x " aria-hidden="true"></i>
+								<h5>Адрес:</h5>
+								<h6>Иркутская область, Иркустк, Пшеничная д. 15</h6>
+								<button class="button hbtn hb-fill-right" data-toggle="modal" data-target="#exampleModalLong">Консультация</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- footer -->
+		<footer class="section">
+			<div class="container">
+				<span>Разработка сайта выполнена студией You-face<span> <br>
+				<span><a id="you-face" href="https://you-face.site/">you-face.site</a></span> <br>
+				<span>You-face © Все права защищены</span>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		
+		<!-- script -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/fakeLoader.min.js"></script>
+		<script src="js/magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script>
+			$(document).ready(function(){
+            /*ПРОВЕРЯЕМ НАЖАТА ЛИ КНОПКА ОТПРАВКИ*/
+            $('#btn_submit').click(function(){
+                // собираем данные с формы
+                var user_name    = $('#name').val();
+                var user_phone = $('#phone').val();
+                var text_comment = $('#text_comment').val();
+                // отправляем данные
+                $.ajax({
+                    url: "send.php", // куда отправляем
+                    type: "post", // метод передачи
+                    data: { // что отправляем
+                        "name":    user_name,
+                        "phone":   user_phone,
+                        "text_comment": text_comment
+                    },
+                    error:function(){$("#erconts").html("Произошла ошибка!");}, 
+                    /* если произойдет ошибка в элементе с id erconts выведится сообщение*/                 
+                    beforeSend: function() {                     
+                        $("#erconts").html("Отправляем данные...");                   
+                    },                 
+                    success: function(result){                     
+                        /* В случае удачной обработки и отправки выполнится следующий код*/                     
+                        $('#erconts').html(result);                     
+                        console.log("ntcn");                 
+		                    }  
+		                });
+		            });
+		        });
+		</script>
+		<script>
+			var $page = $('html, body');
+				$('a[href*="#"]').click(function() {
+				    $page.animate({
+				        scrollTop: $($.attr(this, 'href')).offset().top
+				    }, 400);
+				    return false;
+				});
+		</script> 
+	</body>
+</html>

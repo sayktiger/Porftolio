@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АлексГрупп</title>
+    <!-- favicon -->
+    <!-- plugin scripts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/apton-icons.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <!-- theme styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="preloader"><div class="clock"><div class="arrow_sec"></div><div class="arrow_min"></div></div></div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title ">Рассчитать стоимость</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <form action="send.php" method="post">
+              <div class="modal-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label>*Ваше Имя:</label>
+                                <input id="name" type="text" class="form-control" placeholder="Ваше имя" maxlength="20">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label>*Ваш Номер телефона:</label>
+                                <input id="phone" type="number" class="form-control" placeholder="Ваш номер телефона" maxlength="12">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label>Ваш Email:</label>
+                                <input id="email" type="email" class="form-control" placeholder="Ваш email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btn_submit" class="thm-btn banner-one__btn d-block mx-auto" type="button"><span>Отправить сообщение</span></button>
+                </div>
+                <div id="erconts" class="text-center"></div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+        <header class="site-header-one stricky site-header-one__fixed-top">
+            <div class="container-fluid">
+                <div class="site-header-one__logo">
+                        <h3 class="block_title">АлексГрупп</h3>
+                    <span class="side-menu__toggler"><i class="fa fa-bars"></i></span><!-- /.side-menu__toggler -->
+                </div><!-- /.site-header-one__logo -->
+                <div class="main-nav__main-navigation">
+                    <ul class="main-nav__navigation-box">
+                        <li><a href="#features" data-target="anchor">Преимущества</a></li>
+                        <li><a href="#garage" data-target="anchor">Гараж</a></li>
+                        <li><a href="#work" data-target="anchor">Цены</a></li>
+                        <li><a href="#views" data-target="anchor">Отзывы</a></li>
+                        <li><a href="#contaсt" data-target="anchor">Контакты</a></li>
+                    </ul><!-- /.main-nav__navigation-box -->
+                </div><!-- /.main-nav__main-navigation -->
+                <div class="main-nav__right">
+                    <button class="thm-btn main-nav__btn" data-toggle="modal" data-target="#myModal"><span class="btn_text">Оставить заявку</span></button>
+                </div><!-- /.main-nav__right -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.site-header-one -->
+
+        <section class="banner-one">
+
+            <img src="assets/images/shapes/banner-shape-1-1.png" class="banner-one__bg-shape-1" alt="">
+            <div class="banner-one__bg" style="background-image: url(assets/images/resources/banner-image-1-1.jpg);">
+
+            </div><!-- /.banner-one__bg -->
+            <div class="container">
+                <div class="banner-one__moc">
+                    <img src="assets/images/resources/h1.jpg" class="wow fadeInUp img-thumbnail"
+                        data-wow-duration="1500ms" alt="">
+                </div><!-- /.banner-one__moc -->
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="banner-one__content">
+                            <h3>Гараж из <br> Сэндвич-панелей <br> Под ключ <br> В Новосибирске</h3>
+                            <p>Производим и строим доступные гаражи в Новосибирске.<br>Обеспечиваем качество в заводских условия.</p>
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="thm-btn banner-one__btn"><span>Рассчитать стоимость</span></a>
+                            <!-- /.thm-btn banner-one__btn -->
+                        </div><!-- /.banner-one__content -->
+                    </div><!-- /.col-lg-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.banner-one -->
+
+        <section class="service-one" id="features">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p>Чем хорош Гараж из Сэндвич панелей?</p>
+                    <h3>Главные преимущества</h3>
+                    <h3>Гаража из Сэндвич панелей</h3>
+                </div><!-- /.block-title text-center -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-one__inner">
+                                <div class="service-one__circle"></div><!-- /.service-one__circle -->
+                                <div class="service-one__icon">
+                                    <i><img class="img-thumbnail" src="assets/images/icon/icon_1.png" alt="Экономически выгодно"></i>
+                                </div><!-- /.service-one__icon -->
+                                <h3>Экономически выгодно</h3>
+                                <p>Гараж из сэндвич-панелей не требует отделки, а так же больших затрат на обустройство фундамента, утепление и транспортировку.</p>
+
+                            </div><!-- /.service-one__inner -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-4 col-md-4 wow fadeInDown" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-one__inner">
+                                <div class="service-one__circle"></div><!-- /.service-one__circle -->
+                                <div class="service-one__icon">
+                                    <i><img src="assets/images/icon/icon_2.png" alt="Быстро строится"></i>
+                                </div><!-- /.service-one__icon -->
+                                <h3>Быстро строится</h3>
+                                <p>За счёт лёгкости сэндвич-панелей и конструктивных особенностей, монтаж гаража занимает в среднем до 7-ми дней.<br><br></p>
+                            </div><!-- /.service-one__inner -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-one__inner">
+                                <div class="service-one__circle"></div><!-- /.service-one__circle -->
+                                <div class="service-one__icon">
+                                    <i><img src="assets/images/icon/icon_3.png" alt="Энергоэффективный"></i>
+                                </div><!-- /.service-one__icon -->
+                                <h3>Энергоэффективный</h3>
+                                <p>Благодаря слою утеплителя, сэндвич-панели имеют низкую теплопроводность. Поэтому Вы легко заведёте свой автомобиль даже в зимние морозы.</p>
+                            </div><!-- /.service-one__inner -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-one__inner">
+                                <div class="service-one__circle"></div><!-- /.service-one__circle -->
+                                <div class="service-one__icon">
+                                    <i><img src="assets/images/icon/icon_4.png" alt="Долговечный"></i>
+                                </div><!-- /.service-one__icon -->
+                                <h3>Долговечный</h3>
+                                <p>Гараж имеет длительный срок эксплуатации, так как сэндвич-панели очень устойчивы к воздействию различных факторов окружающей среды.</p>
+                            </div><!-- /.service-one__inner -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-4 col-md-4 wow fadeInDown" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-one__inner">
+                                <div class="service-one__circle"></div><!-- /.service-one__circle -->
+                                <div class="service-one__icon">
+                                    <i><img src="assets/images/icon/icon_5.png" alt="Гигиеничный"></i>
+                                </div><!-- /.service-one__icon -->
+                                <h3>Гигиеничный</h3>
+                                <p>Сэндвич-панели не являются питательной средой для бактерий, поэтому в гараже никогда не появится грибок или плесень.<br><br></p>
+                            </div><!-- /.service-one__inner -->
+                        </div><!-- /.service-one__single -->
+                    </div>
+                    <div class="col-lg-4 col-md-4 wow fadeInDown" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-one__inner">
+                                <div class="service-one__circle"></div><!-- /.service-one__circle -->
+                                <div class="service-one__icon">
+                                    <i><img src="assets/images/icon/icon_6.png" alt="Привлекателен внешне"></i>
+                                </div><!-- /.service-one__icon -->
+                                <h3>Привлекателен внешне</h3>
+                                <p>Гаражи из сэндвич-панелей имеют очень привлекательный внешний вид. У сэндвич-панелей огромное количество цветов и фактур!</p>
+                            </div><!-- /.service-one__inner -->
+                        </div><!-- /.service-one__single -->
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-one -->
+
+        <section class="cta-one">
+            <img src="assets/images/shapes/cta-1-shape-1.png" class="cta-one__bg-shape-1" alt="">
+            <img src="assets/images/shapes/cta-1-shape-2.png" class="cta-one__bg-shape-2" alt="">
+            <div class="container">
+                <div class="cta-one__moc wow fadeInLeft" data-wow-duration="1500ms">
+                    <img src="assets/images/resources/cta-1-moc-1.jpg" class="cta-one__moc-img" alt="">
+                </div><!-- /.cta-one__moc -->
+                <div class="row justify-content-end">
+                    <div class="col-lg-6">
+                        <div class="cta-one__content ml-md-5">
+                            <div class="block-title text-left">
+                                <p>Мы ценим наших клиентов</p>
+                                <h3>До конца ноября у нас<br> Действует скидка 10%!</h3>
+                            </div><!-- /.block-title text-center -->
+                            <div class="cta-one__text">
+                                <p>*Заключаем договор до конца ноября, вы получаете скидку.</p>
+                            </div><!-- /.cta-one__text -->
+                            <ul class="list-unstyled cta-one__list">
+                                <li>
+                                    <i class="fa fa-check-circle"></i>
+                                    Рассчитаем стоимость!
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-circle"></i>
+                                    Монтаж в короткие сроки!
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-circle"></i>
+                                    Сделаем гараж качественно!
+                                </li>
+                            </ul><!-- /.list-unstyled -->
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="thm-btn cta-one__btn"><span>Рассчитать стоимость</span></a>
+                            <!-- /.thm-btn cta-one__btn -->
+                        </div><!-- /.cta-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.cta-one -->
+
+        <section class="cta-two" id="garage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="cta-two__content">
+                            <div class="block-title text-left">
+                                <p>Почему гараж из сэндвич панелей?</p>
+                                <h3>Надежно защищает</h3>
+                                <h3>Ваше авто</h3>
+                            </div><!-- /.block-title text-left -->
+                            <div class="cta-two__icon-wrap">
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Надежность<br></h3>
+                                </div><!-- /.cta-two__icon-single -->
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Стеновые<br>Панели</h3>
+                                </div><!-- /.cta-two__icon-single -->
+                            </div><!-- /.cta-two__icon-wrap -->
+                            <div class="cta-two__icon-wrap">
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Секционные<br>Ворота</h3>
+                                </div><!-- /.cta-two__icon-single -->
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-industry" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Металлокаркас<br></h3>
+                                </div><!-- /.cta-two__icon-single -->
+                            </div><!-- /.cta-two__icon-wrap -->
+                            <div class="cta-two__text">
+                                <p>1. В гараже из сэндвич-панелей нечему ломаться, авто защищено от морозов, дождя, ветра, упавших веток и града.<br><br>2.Ставим утеплитель толщиной 100мм. Так мы уменьшаем расходы на прогревание автомобиля и расходы на отопление.<br><br>3. Устанавливаем секционные ворота с торсионным механизмом, рассчитанным на 25000 циклов открывания-закрывания.<br><br>4. Изготавливаем Металлокаркас из новых труб заводского производства сечением 80х80 мм или 60х60 мм, наносим два защитных слоя и окрашиваем порошковой краской. Чтобы гарантировать высокое качество, эти работы проводятся на нашем производстве.
+
+                                </p>
+                            </div><!-- /.cta-two__text -->
+                            <a data-toggle="modal" data-target="#myModal" href="#" class="thm-btn cta-two__btn"><span>Заказать гараж</span></a>
+                            <!-- /.thm-btn cta-two__btn -->
+                        </div><!-- /.cta-two__content -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 ">
+                        <div class="cta-two__images d-flex justify-content-end align-items-end flex-column">
+                            <img src="assets/images/resources/card_4.jpg" class="wow fadeInUp"
+                                data-wow-duration="1500ms" alt="">
+                            <img src="assets/images/resources/card_2.jpg class="wow fadeInUp"
+                                data-wow-duration="1500ms" alt="">
+                            <img src="assets/images/resources/card_3.jpg" class="wow fadeInUp"
+                                data-wow-duration="1500ms" alt="">
+                            <img src="assets/images/resources/card_1.jpg" class="wow fadeInUp"
+                                data-wow-duration="1500ms" alt="">
+                            <img src="assets/images/resources/card_5.jpg" class="wow fadeInUp"
+                                data-wow-duration="1500ms" alt="">
+                            <img src="assets/images/resources/card_6.jpg" class="wow fadeInUp"
+                                data-wow-duration="1500ms" alt="">        
+                        </div><!-- /.cta-two__images -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.cta-two -->
+
+        <section class="pricing-one" id="work">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p>Разрабатываем индивидуальные проекты под Ваши размеры.</p>
+                    <h3>Цены на наши услуги</h3>
+                </div><!-- /.block-title text-center -->
+
+                <div class="tabed-content">
+                    <div id="month">
+                        <div class="row">
+                            <div class="col-lg-4 animated fadeInLeft">
+                                <div class="pricing-one__single">
+                                    <div class="pricing-one__circle"></div><!-- /.pricing-one__circle -->
+                                    <div class="pricing-one__inner">
+                                        <p>Гараж на одну машину</p>
+                                        <h3>от 320 000 руб.</h3>
+                                        <ul class="list-unstyled pricing-one__list">
+                                            <li>Размер — 4 x 6 х 2,4 (3,6 в коньке)</li>
+                                            <li>Количество парковочных мест — 1</li>
+                                            <li>Тип кровли — односкатная, двух скатная </li>
+                                            <li>Толщина утеплителя стен,кровли — от 50 мм</li>
+                                        </ul><!-- /.list-unstyled pricing-one__list -->
+                                        <a data-toggle="modal" data-target="#myModal" href="#" class="thm-btn pricing-one__btn"><span>Купить</span></a>
+                                        <!-- /.thm-btn -->
+                                        <span>Не упустите шанс!</span>
+                                    </div><!-- /.pricing-one__inner -->
+                                </div><!-- /.pricing-one__single -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-4 animated fadeInUp">
+                                <div class="pricing-one__single">
+                                    <div class="pricing-one__circle"></div><!-- /.pricing-one__circle -->
+                                    <div class="pricing-one__inner">
+                                        <p>Гараж на две машины</p>
+                                        <h3>От 530 000 руб.</h3>
+                                        <ul class="list-unstyled pricing-one__list">
+                                            <li>Размер — 6 x 8 x 2,4 (3,6 в коньке)</li>
+                                            <li>Количество парковочных мест — 2</li>
+                                            <li>Тип кровли — односкатная, двух скатная </li>
+                                            <li>Толщина утеплителя стен, кровли — от 50 мм</li>
+                                        </ul><!-- /.list-unstyled pricing-one__list -->
+                                        <a data-toggle="modal" data-target="#myModal" href="#" class="thm-btn pricing-one__btn"><span>Купить</span></a>
+                                        <!-- /.thm-btn -->
+                                        <span>Не упустите шанс!</span>
+                                    </div><!-- /.pricing-one__inner -->
+                                </div><!-- /.pricing-one__single -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-4 animated fadeInRight">
+                                <div class="pricing-one__single">
+                                    <div class="pricing-one__circle"></div><!-- /.pricing-one__circle -->
+                                    <div class="pricing-one__inner">
+                                        <p>Гараж на две машины + Хоз.Блок</p>
+                                        <h3>от 655 000 руб.</h3>
+                                        <ul class="list-unstyled pricing-one__list">
+                                            <li>Размер — 8 x 8 x 2,4 (3,6 в коньке)</li>
+                                            <li>Количество парковочных мест — 2</li>
+                                            <li>Тип кровли — односкатная, двух скатная </li>
+                                            <li>Толщина утеплителя стен,кровли — от 50 мм</li>
+                                        </ul><!-- /.list-unstyled pricing-one__list -->
+                                        <a data-toggle="modal" data-target="#myModal" href="#" class="thm-btn pricing-one__btn"><span>Купить</span></a>
+                                        <!-- /.thm-btn -->
+                                        <span>Не упустите шанс!</span>
+                                    </div><!-- /.pricing-one__inner -->
+                                </div><!-- /.pricing-one__single -->
+                            </div><!-- /.col-lg-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /#month -->
+                        </div><!-- /.row -->
+                    </div><!-- /#year -->
+                </div><!-- /.tabed-content -->
+
+            </div><!-- /.container -->
+        </section><!-- /.pricing-one -->
+
+        <section class="testimonials-one" id="views">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-6">
+                        <div class="testimonials-one__thumb-carousel-wrap">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__icon-inner">
+                                    <img src="assets/images/shapes/testi-qoute-1-1.png" alt="">
+                                </div><!-- /.testimonials-one__icon-inner -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__thumb-carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-one__image">
+                                            <img src="assets/images/resources/reviews1.jpg" alt="Awesome Image" />
+                                        </div><!-- /.testimonials-one__image -->
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-one__image">
+                                            <img src="assets/images/resources/reviews2.jpg" alt="Awesome Image" />
+                                        </div><!-- /.testimonials-one__image -->
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-one__image">
+                                            <img src="assets/images/resources/reviews3.jpg" alt="Awesome Image" />
+                                        </div><!-- /.testimonials-one__image -->
+                                    </div><!-- /.swiper-slide -->
+                                </div><!-- /.swiper-wrapper -->
+                            </div><!-- /.testimonials-one__thumb-carousel -->
+                        </div><!-- /.testimonials-one__thumb-carousel-wrap -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-xl-6 d-flex">
+                        <div class="my-auto">
+                            <div class="block-title text-left">
+                                <p>Они рассказывают истории о своих задачах, которые мы решили!
+                                    <br><br>Это самый ценный актив нашей компании!</p>
+                                <h3>Отзывы клиентов</h3>
+                            </div><!-- /.block-title -->
+                            <div class="testimonials-one__carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-one__single">
+                                            <p class="testimonials-one__text">Гараж из сэндвич-панелей, которые мне построили специалисты из АлексГрупп,
+                                        причем невероятно быстро, превзошел все мои ожидания.
+                                        Я попросил отделать стены под дерево.
+                                        Так действительно не отличишь, он, будто сделан из натурального дерева.
+                                        Вот что значит - работают профессионалы!</p>
+                                            <!-- /.testimonials-one__text -->
+                                            <h3 class="testimonials-one__title">Михаил Казначев</h3>
+                                            <!-- /.testimonials-one__title -->
+                                        </div><!-- /.testimonials-one__single -->
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-one__single">
+                                            <p class="testimonials-one__text">Хочу выразить благодарность компании АлексГрупп за отличную работу: установку на
+                                        дачном участке двух гаражей для меня и соседа.
+                                        Решили заказать сразу два для экономии, построили, гаражи смотрятся даже
+                                        солиднее, чем сами наши дачи, большое спасибо!</p>
+                                            <!-- /.testimonials-one__text -->
+                                            <h3 class="testimonials-one__title">Станислав Михеев</h3>
+                                            <!-- /.testimonials-one__title -->
+                                        </div><!-- /.testimonials-one__single -->
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-one__single">
+                                            <p class="testimonials-one__text">Все никак не мог решить со стройкой гаража, пока в интернете не прочитал про
+                                        сэндвич панели.
+                                        Стал искать информацию и вышел на вашу компанию. Приехал замерщик, мы с ним
+                                        обсудили на месте все вопросы.
+                                        Гараж построили всего за две недели. Мне очень нравится, как он выглядит!</p>
+                                            <!-- /.testimonials-one__text -->
+                                            <h3 class="testimonials-one__title">Эмин Мусаев</h3>
+                                            <!-- /.testimonials-one__title -->
+                                        </div><!-- /.testimonials-one__single -->
+                                    </div><!-- /.swiper-slide -->
+                                </div><!-- /.swiper-wrapper -->
+                                <div class="testimonials-one__pagination-wrap">
+                                    <div class="swiper-pagination"></div>
+                                </div><!-- /.testimonials-one__pagination-wrap -->
+                            </div><!-- /.testimonials-one__carousel -->
+                        </div><!-- /.my-auto -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.testimonials-one -->
+
+        <section class="contact-one" id="contaсt">
+            <img src="assets/images/shapes/contact-bg-shape-1-1.png" class="contact-one__bg-shape-1" alt="">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-7">
+                                <div class="block-title">
+                                    <p>Наши Контакты</p>
+                                    <h3>Как с нами связаться? <br>Отправьте нам сообщение.</h3>
+                                </div><!-- /.block-title -->
+                                <div class="row">
+                                    <form action="send_contact.php" method="post">
+                                      <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="form-group input-group-lg">
+                                                        <label>*Ваше Имя:</label>
+                                                        <input id="name_contact" type="text" class="form-control" placeholder="Ваше имя" maxlength="20">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="form-group input-group-lg">
+                                                        <label>*Ваш Номер телефона:</label>
+                                                        <input id="phone_contact" type="number" class="form-control" placeholder="Ваш номер телефона" maxlength="12">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-sm-12">
+                                                    <div class="form-group input-group-lg">
+                                                        <label>Ваш Email:</label>
+                                                        <input id="email_contact" type="email" class="form-control" placeholder="Ваш email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button id="btn_submit_contact" class="thm-btn banner-one__btn d-block mx-auto" type="button"><span>Отправить сообщение</span></button>
+                                        </div>
+                                        <div id="erconts_contact" class="text-center"></div>
+                                    </form>
+                    </div><!-- /.col-lg-7 -->
+                    </div>
+                    <div class="col-lg-5 ">
+                        <div class="block-title contant_title">
+                                    <p>Вы можете нам написать,позвонить <p>
+                                    <h3>Контакты</h3> <br> <br>
+                         </div><!-- /.block-title -->
+                         <div class="row data_contact">
+                            <div class="cta-two__icon-wrap ">
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Телефон:<br><a href="tel:79231077744">+7-923-107-77-44</a></h3>
+                                </div><!-- /.cta-two__icon-single -->
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Почта:<br><a href="mailto:9231077744@mail.ru">9231077744@mail.ru</a></h3>
+                                </div><!-- /.cta-two__icon-single -->
+                            </div><!-- /.cta-two__icon-wrap -->
+                            <div class="cta-two__icon-wrap">
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>WhatsApp<br><a href="https://wa.me/+7-923-107-77-44">+7-923-107-77-44</a></h3>
+                                </div><!-- /.cta-two__icon-single -->
+                                <div class="cta-two__icon-single">
+                                    <div class="cta-two__icon">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </div><!-- /.cta-two__icon -->
+                                    <h3>Instagram:<br><a href="https://www.instagram.com/alexmetallov/?igshid=1xbwrkfeg07kv">Alex Metallov</a></h3>
+                                </div><!-- /.cta-two__icon-single -->
+                            </div><!-- /.cta-two__icon-wrap -->   
+                         </div>
+                    </div>
+
+                    
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-one -->
+        <footer class="site-footer">
+            
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container text-center">
+                    <p>© Все права защищены <a class="Y-F" target="_blank" href="https://you-face.site">You Face</a><br>Над сайтом работала веб-студия <a class="Y-F" target="_blank" href="https://you-face.site">You Face</a></p>
+
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div><!-- /.page-wrapper -->
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.side-menu__block-overlay -->
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+
+                <a href="#" class="side-menu__toggler side-menu__close-btn"><img
+                        src="assets/images/shapes/close-1-1.png" alt=""></a>
+            </div><!-- /.side-menu__top -->
+
+
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+            <div class="side-menu__content">
+                </div>
+            </div><!-- /.side-menu__content -->
+        </div><!-- /.side-menu__block-inner -->
+    </div><!-- /.side-menu__block -->
+
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(window).load(function () {
+
+    $("#preloader").delay(1400).fadeOut("slow", function() {
+    });
+
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+       var margin = 10; // переменная для контроля докрутки
+       $("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+          $("html, body").animate({
+             scrollTop: $($(this).attr("href")).offset().top-margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+          }, {
+             duration: 1600, // тут можно контролировать скорость
+             easing: "swing"
+          });
+          return false;
+       });
+    });
+
+    </script>
+    <script>
+        $(document).ready(function(){
+                /*ПРОВЕРЯЕМ НАЖАТА ЛИ КНОПКА ОТПРАВКИ*/
+                $('#btn_submit').click(function(){
+                    // собираем данные с формы
+                    var user_name    = $('#name').val();
+                    var user_email   = $('#email').val();
+                    var user_phone = $('#phone').val();
+                    // отправляем данные
+                    $.ajax({
+                        url: "send.php", // куда отправляем
+                        type: "post", // метод передачи
+                        data: { // что отправляем
+                            "name":    user_name,
+                            "email":   user_email,
+                            "phone":   user_phone,
+                        },
+                        error:function(){$("#erconts").html("Произошла ошибка!");}, 
+                        /* если произойдет ошибка в элементе с id erconts выведится сообщение*/                 
+                        beforeSend: function() {                     
+                            $("#erconts").html("Отправляем данные...");                   
+                        },                 
+                        success: function(result){                     
+                            /* В случае удачной обработки и отправки выполнится следующий код*/                     
+                            $('#erconts').html(result);                     
+                            console.log("ntcn");                 
+                        }  
+                    });
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function(){
+                /*ПРОВЕРЯЕМ НАЖАТА ЛИ КНОПКА ОТПРАВКИ*/
+                $('#btn_submit_contact').click(function(){
+                    // собираем данные с формы
+                    var user_name_contact    = $('#name_contact').val();
+                    var user_email_contact   = $('#email_contact').val();
+                    var user_phone_contact   = $('#phone_contact').val();
+                    // отправляем данные
+                    $.ajax({
+                        url: "send_contact.php", // куда отправляем
+                        type: "post", // метод передачи
+                        data: { // что отправляем
+                            "name":    user_name_contact,
+                            "email":   user_email_contact,
+                            "phone":   user_phone_contact,
+                        },
+                        error:function(){$("#erconts_contact").html("Произошла ошибка!");}, 
+                        /* если произойдет ошибка в элементе с id erconts выведится сообщение*/                 
+                        beforeSend: function() {                     
+                            $("#erconts_contact").html("Отправляем данные...");                   
+                        },                 
+                        success: function(result){                     
+                            /* В случае удачной обработки и отправки выполнится следующий код*/                     
+                            $('#erconts_contact').html(result);                     
+                            console.log("ntcn");                 
+                        }  
+                    });
+                });
+            });
+    </script>
+</body>
+
+</html>
