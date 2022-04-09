@@ -15,7 +15,7 @@
 <body>
 
     <aside class="sidepanel">
-        <a href="#" class="sidepanel__link">
+        <a href="#" class="sidepanel__link ">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M-7.46167e-07 2.92969L-1.28061e-07 17.0703C-5.74539e-08 18.6856 1.31439 20 2.92969 20L17.0703 20C18.6856 20 20 18.6856 20 17.0703L20 11.1719L12.9297 11.1719L12.9297 13.5156L9.41406 13.5156L9.41406 11.1719L7.03125 11.1719C5.09262 11.1719 3.51562 9.59488 3.51562 7.65625L3.51562 4.10156L7.03125 4.10156L7.03125 7.65625L9.41406 7.65625L9.41406 4.10156L12.9297 4.6875L12.9297 7.65625L20 7.65625L20 2.92969C20 1.31439 18.6856 -8.16774e-07 17.0703 -7.46167e-07L2.92969 -1.28061e-07C1.31439 -5.74539e-08 -8.16774e-07 1.31439 -7.46167e-07 2.92969Z"
@@ -57,12 +57,12 @@
                     </svg>
                 </div>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#skill">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li class="menu__link hover-link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link hover-link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link hover-link"><a href="#skill">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link hover-link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link hover-link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link hover-link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -122,18 +122,18 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section class="promo">
+    <section class="promo ">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
             <span></span>
         </div>
         <div class="container">
-            <div class="title title_fz16 promo__subtitle">Меня зовут Константин Хохлов</div>
-            <h1 class="title title_fz48 promo__title">Я web-разработчик из города Краснодар</h1>
-            <div class="promo__buttons">
-                <a href="#portfolio" class="btn promo__link">Портфолио</a>
-                <a href="#resume" class="promo__link promo__hover">Про меня</a>
+            <div class="wow animate__animated animate__fadeInLeft  title title_fz16 promo__subtitle">Меня зовут Константин Хохлов</div>
+            <h1 class="wow animate__animated animate__fadeInLeft title title_fz48 promo__title">Я web-разработчик из города Краснодар</h1>
+            <div class="wow animate__animated animate__fadeInLeft promo__buttons">
+                <a href="#portfolio" class="btn promo__link promo__button">Портфолио</a>
+                <a href="#about" class="promo__link promo__hover">Про меня</a>
             </div>
         </div>
     </section>
@@ -141,7 +141,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__photo">
+                <div class="about__photo wow animate__animated animate__fadeInLeft">
                     <!-- <img srcset="img/Photo_mobile.png 300w,
                                  img/Photo.png 400w"
                          sizes="(max-width: 576px) 280px,
@@ -155,7 +155,7 @@
                     </picture>
                 </div>
 
-                <div class="about__descr">
+                <div class="about__descr wow animate__animated animate__fadeInRight">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
                     <div class="title about__subtitle">Меня зовут Констатин</div>
                     <div class="divider"></div>
@@ -165,7 +165,7 @@
                         навыки, которыми я обладаю. Посмотрите и решите, соответствуют ли они Вашим ожиданиям, прежде
                         чем вы решите оформить заказ.</p>
                 </div>
-                <div class="about__skills">
+                <div class="about__skills wow animate__animated animate__fadeInRight">
                     <div class="about__skills-item">
                         <div class="about__skills-circle">
                             <img src="icons/about/web development.svg" alt="Веб Разработка">
@@ -222,7 +222,7 @@
         </div>
     </section>
 
-    <section class="resume" id="resume">
+    <section class="resume wow animate__animated animate__fadeInUp animate__delay-0.5s" id="resume">
         <div class="container">
             <h2 class="title title_fz16 resume__title">Опыт</h2>
             <div class="title resume__subtitle">Чем я буду полезен</div>
@@ -306,14 +306,14 @@
         </div>
     </section>
 
-    <section class="skill" id="skill">
+    <section class="skill wow animate__animated animate__fadeInUp animate__delay-0.5s" id="skill">
         <div class="container">
             <h2 class="title title_fz16 skill__title">Навыки</h2>
             <div class="title title_fz36 skill__subtitle">Что я использую в работе</div>
             <div class="divider"></div>
 
             <div class="skill__wrapper">
-                <div class="skill__wrapper-card">
+                <div class="skill__wrapper-card glow-on-hover">
                     <div class="skill__wrapper-card_img">
                         <img src="icons/skill/html5.svg" alt="HTML5">
                     </div>
@@ -414,7 +414,7 @@
                         вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</p>
                 </div>
 
-                <div class="skill__wrapper-card">
+                <div class="skill__wrapper-card" id="basic-waypoint">
                     <div class="skill__wrapper-card_img">
                         <img src="icons/skill/Mongo.db.svg" alt="Mongo.db">
                     </div>
@@ -424,52 +424,52 @@
                 </div>
             </div>
 
-            <div class="skill__rating">
+            <div class="skill__rating" >
                 <div class="skill__rating-item">
                     <h3 class="skill__rating-item_title title title_fz14">Создание сайтов</h3>
-                    <div class="skill__rating-item-counter">100%</div>
-                    <div class="skill__rating-item-line">
-                        <span></span>
+                    <div class="skill__rating-item-counter"></div>
+                    <div class="skill__rating-item-line" >
+                        <span class="line-bar-1"></span>
                     </div>
                 </div>
 
                 <div class="skill__rating-item">
                     <h3 class="skill__rating-item_title title title_fz14">Создание приложений</h3>
-                    <div class="skill__rating-item-counter">85%</div>
+                    <div class="skill__rating-item-counter"></div>
                     <div class="skill__rating-item-line">
-                        <span></span>
+                        <span class="line-bar-2"></span>
                     </div>
                 </div>
 
                 <div class="skill__rating-item">
                     <h3 class="skill__rating-item_title title title_fz14">Работа с данными</h3>
-                    <div class="skill__rating-item-counter">90%</div>
+                    <div class="skill__rating-item-counter"></div>
                     <div class="skill__rating-item-line">
-                        <span></span>
+                        <span class="line-bar-3"></span>
                     </div>
                 </div>
 
                 <div class="skill__rating-item">
                     <h3 class="skill__rating-item_title title title_fz14">Креативность</h3>
-                    <div class="skill__rating-item-counter">75%</div>
+                    <div class="skill__rating-item-counter"></div>
                     <div class="skill__rating-item-line">
-                        <span></span>
+                        <span class="line-bar-4"></span>
                     </div>
                 </div>
 
                 <div class="skill__rating-item">
                     <h3 class="skill__rating-item_title title title_fz14">Создание дизайна</h3>
-                    <div class="skill__rating-item-counter">90%</div>
+                    <div class="skill__rating-item-counter"></div>
                     <div class="skill__rating-item-line">
-                        <span></span>
+                        <span class="line-bar-5"></span>
                     </div>
                 </div>
 
                 <div class="skill__rating-item">
                     <h3 class="skill__rating-item_title title title_fz14">Soft skills</h3>
-                    <div class="skill__rating-item-counter">95%</div>
+                    <div class="skill__rating-item-counter"></div>
                     <div class="skill__rating-item-line">
-                        <span></span>
+                        <span class="line-bar-6"></span>
                     </div>
                 </div>
             </div>
@@ -479,7 +479,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio wow animate__animated animate__fadeInUp animate__delay-0.5s" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_h2_center">Портфолио</h2>
             <div class="title title_fz36 portfolio__subtitle title_div_center">Мои работы</div>
@@ -514,7 +514,7 @@
         </div>
     </section>
 
-    <section class="price" id="price">
+    <section class="price wow animate__animated animate__fadeInUp animate__delay-0.5s" id="price">
         <div class="container">
             <h2 class="title title_fz16 title_h2_center">Прайс-лист</h2>
             <div class="divider title_divider divider_m"></div>
@@ -578,7 +578,7 @@
         </div>
     </section>
 
-    <section class="contacts" id="contacts">
+    <section class="contacts wow animate__animated animate__fadeInUp animate__delay-0.5s" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="conctacts__photo">
@@ -638,6 +638,12 @@
     </section>
 
     <!-- script -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

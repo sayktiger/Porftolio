@@ -60,5 +60,176 @@ counters.forEach((item,i) =>{
     lines[i].style.width = item.innerHTML;
 });
 
+
+const lineBarOne = new ProgressBar.Line(".line-bar-1", {
+    strokeWidth: 4,
+    trailWidth: 4,
+    from: { color: "#FFA501" },
+    to: { color: "#FFA501" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        right: '-7px',
+        top: '-57px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+
+  const lineBarTwo = new ProgressBar.Line(".line-bar-2", {
+    strokeWidth: 4,
+    trailWidth: 4,
+    from: { color: "#FFA501" },
+    to: { color: "#FFA501" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        right: '-7px',
+        top: '-57px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+
+  const lineBarThee = new ProgressBar.Line(".line-bar-3", {
+    strokeWidth: 4,
+    trailWidth: 4,
+    from: { color: "#FFA501" },
+    to: { color: "#FFA501" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        right: '-7px',
+        top: '-57px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+
+  const lineBarFour = new ProgressBar.Line(".line-bar-4", {
+    strokeWidth: 4,
+    trailWidth: 4,
+    from: { color: "#FFA501" },
+    to: { color: "#FFA501" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        right: '-7px',
+        top: '-57px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+
+  const lineBarFive = new ProgressBar.Line(".line-bar-5", {
+    strokeWidth: 4,
+    trailWidth: 4,
+    from: { color: "#FFA501" },
+    to: { color: "#FFA501" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        right: '-7px',
+        top: '-57px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+
+  const lineBarSix = new ProgressBar.Line(".line-bar-6", {
+    strokeWidth: 4,
+    trailWidth: 4,
+    from: { color: "#FFA501" },
+    to: { color: "#FFA501" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        right: '-7px',
+        top: '-57px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+  
+  
+  
+  let waypoint = new Waypoint({
+    element: document.getElementById('basic-waypoint'),
+    handler: function() {
+        lineBarOne.animate(1, {
+            duration: 1000
+          });
+          lineBarTwo.animate(.85, {
+            duration: 1000
+          });
+          lineBarThee.animate(.90, {
+            duration: 1000
+          });
+          lineBarFour.animate(.75, {
+            duration: 1000
+          });
+          lineBarFive.animate(.90, {
+            duration: 1000
+          });
+          lineBarSix.animate(.95, {
+            duration: 1000
+          });
+    }
+  })
 });
+
 

@@ -18,21 +18,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 250px;
+        max-width: 280px;
     }
     &__link{
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
         color: #000000;
+        transition: all 0.3s;
         &:hover{
-            color:#fff;
             text-decoration: none;
+            color:$main-color;
         }
+      
     }
     &__hover{
-        &:hover{
-            color: $main-color;
-        }
+        @include hover-button-1;
+        height: 45px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
