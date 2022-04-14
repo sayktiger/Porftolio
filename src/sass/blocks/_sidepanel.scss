@@ -27,11 +27,14 @@
         width: 25px;
         span{
             display: block;
-            transform: rotate(-90deg) translate(-40%, -260%);
-            width: 150px;
+            transform: rotate(-90deg) translate(-52%, -275%);
+            width: 155px;
             font-weight: 700;
             font-size: 16px;
             line-height: 24px
         }
+    }
+    &__telegram{
+        transform: rotate(-45deg);
     }
 }

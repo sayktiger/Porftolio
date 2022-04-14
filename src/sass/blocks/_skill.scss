@@ -18,7 +18,7 @@
     &__wrapper{
         display: grid;
         grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
-        grid-auto-rows: repeat(2,minmax(270px,auto));
+        grid-auto-rows: minmax(270px,auto);
         gap: 13px;
         &-card{
             border: 1px solid #000000;

@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: flex-end;
     cursor: pointer;
+    z-index: 9;
     span{
         display: block;
         width: 30px;
@@ -37,7 +38,7 @@
     &__block{
         position: relative;
         // left:-100%;
-        transition: all 0.6;
+        transition: all 0.6s;
         max-width: 345px;
         height: 100vh;
         background-color: $main-color;

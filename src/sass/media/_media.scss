@@ -171,6 +171,7 @@
             &-item {
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
+                justify-content: center;
             }
         }
     }
@@ -193,6 +194,15 @@
             }
         }
     }
+    .price{
+        &__wrapper{
+            justify-content: center;
+        }
+        &__wrapper ul li{
+            margin-bottom: 20px;
+        }
+    }
+    
     .contacts {
         padding-top: 40px;
         &__photo {
@@ -204,6 +214,7 @@
         &__form {
             grid-template: 45px 190px 45px / repeat(2, 250px);
         }
+        
     }
 }
 
@@ -231,6 +242,10 @@
     .menu__block{
         width: 250px;
         padding-left: 20px;
+        padding-top: 65px;
+    }
+    .menu__social{
+        transform: translateX(-50%);
     }
 
     .about{
@@ -305,9 +320,11 @@
             max-width: 220px;
             margin: 0 auto;
         }
+        &__police{
+            justify-content: center;
+        }
         &__policy {
             width: 180px;
-            margin: 0 auto;
             line-height: 18px;
         }
     }
