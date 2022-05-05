@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('PlayfairDisplay-Italic.woff') format('woff'),
+        url('PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansSC';
+    src: url('NotoSansSC-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSansSC-Regular-Alphabetic.woff') format('woff'),
+        url('NotoSansSC-Regular-Alphabetic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('PlayfairDisplaySC-Regular.woff2') format('woff2'),
+        url('PlayfairDisplaySC-Regular.woff') format('woff'),
+        url('PlayfairDisplaySC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff'),
+        url('PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('LucidaGrande.woff2') format('woff2'),
+        url('LucidaGrande.woff') format('woff'),
+        url('LucidaGrande.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
