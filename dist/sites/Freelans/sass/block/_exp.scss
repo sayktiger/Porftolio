@@ -1,0 +1,91 @@
+.exp{
+    padding: 80px 0;
+    &__text{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__block{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $main-color;
+            z-index: -2;
+        }
+       .row{
+           align-items: center;
+           justify-content: space-around;
+       }
+        &:hover{
+            .exp__block__text{
+                background-color: $main-color;
+                color: $white;
+            }
+            .exp__block__number{
+                span{
+                    background-color: $main-color;
+                    color: $white;
+                }
+            }
+        }
+        &__text{
+            box-shadow: 0 0 10px 0 rgba(196 ,196, 196, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 46%;
+            transition: all .3s ease-out 0s;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #646f87;
+            margin: 0;
+            
+        }
+        &__number{
+            width: 8%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            
+            span{
+                display: block;
+                width: 55px;
+                height: 55px;
+                line-height: 51px;
+                text-align: center;
+                border: 2px solid $main-color;
+                font-size: 20px;
+                color: $main-color;
+                border-radius: 50%;
+                transition: all .3s ease-out 0s;
+                background-color: #fff;
+            }
+        }
+        &__descr{
+            width: 46%;
+            
+            &_title{
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &_subtitle{
+                color: $main-color;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &_date{
+                font-size: 16px;
+                font-weight: 600;
+                color: $grey;
+            }
+        }
+    }
+}

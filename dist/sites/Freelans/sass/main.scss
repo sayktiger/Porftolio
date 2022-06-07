@@ -1,0 +1,139 @@
+//Сброс стилей браузера
+@import "libs/bootstrap-reboot.min";
+//Подключение сетки 
+@import "libs/bootstrap-grid.min";
+
+
+//Подключение миксинов и переменных
+@import "variable/mixin";
+@import "variable/var";
+//Подключение иконок
+@import "lineicons";
+//Подключение animate.css
+@import "libs/animate.min";
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    position: relative;
+}
+//Стили текста
+.title-letter{
+    font-size: 30px;
+    font-weight: 600;
+    color: $main-color;
+    letter-spacing: 4px;
+}
+.section-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: $main-color;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    color: $title;
+}
+
+.black-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: $title;
+}
+
+.grey-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $grey;
+}
+
+//Стили для кнопки
+.btn{
+    padding: 0 40px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    height: 55px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-out 0s;
+    background-color: #00a78e;
+    outline: none;
+    border: none;
+    &:hover{
+        background-color: rgba($color: #00a78e, $alpha: 0.7);
+    }
+}
+
+.text-align-rigth{
+    text-align: right;
+}
+
+//Стили для картинок
+img{
+    max-width: 100%;
+}
+//Сброс стилей для ссылок
+a {
+    color: #000;
+    text-decoration: none;
+}
+//Сброс стилей для списков
+ul{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+//Стили для зеленой линии 
+.line li {
+    display: inline-block;
+    background-color: $main-color;
+    border-radius: 50px;
+    height: 3px;
+    margin: 10px 0;
+}
+.line li:nth-of-type(1) {
+    width: 64px;
+}
+.line li:nth-of-type(2) {
+    width: 10px;
+}
+.line li:nth-of-type(3) {
+    width: 7px;
+}
+.line__white li{
+    background-color: $white;
+}
+
+
+
+
+
+//Подключение стили слайдера swiper
+@import "libs/_swiper-bundle.min";
+//Стили Блоков
+@import "block/preloader";
+@import "block/header";
+@import "block/about";
+@import "block/service";
+@import "block/portfolio";
+@import "block/price";
+@import "block/client";
+@import "block/counter";
+@import "block/exp";
+@import "block/callback";
+@import "block/footer";
+
+//Подключение стилей мобильного меню
+@import "media/mobile-menu";
+//Подключение Медиа
+@import "media/media";
+

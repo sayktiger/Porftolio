@@ -1,0 +1,68 @@
+.callback{
+    padding: 80px 0;
+    position: relative;
+    &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/shape.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .06;
+    }
+    &__wrapper{
+        position: relative;
+        background-color: #00a78e;
+        padding: 30px 60px 60px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: url('../img/shape-2.png');
+            background-position: bottom center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: .1;
+            z-index: -1;
+        }
+    }
+    &__text{
+        max-width: 520px;
+        margin-top: 25px;
+        &__title{
+            color: $white;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        &__descr{
+            color: $white;
+            margin-top: 15px;
+        }
+    }
+
+    &__btn{
+        &__button{
+            color: #00a78e;
+            background-color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: rgba($color: $white, $alpha: 0.6);
+            }
+        }
+    }
+    
+}

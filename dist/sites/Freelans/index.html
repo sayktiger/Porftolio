@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelanser</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+    </div>
+    <header class="header" id ="home">
+        <aside class="social-panel">
+            <ul class="social-panel__item">
+                <li class="social-panel__items">
+                    <a href="#" class="social-panel__link"><i class="lni lni-facebook-filled"></i></a>
+                </li>
+
+                <li class="social-panel__items">
+                    <a href="#" class="social-panel__link"><i class="lni lni-twitter-filled"></i></a>
+                </li>
+
+                <li class="social-panel__items">
+                    <a href="#" class="social-panel__link"><i class="lni lni-instagram-filled"></i></a>
+                </li>
+
+                <li class="social-panel__items">
+                    <a href="#" class="social-panel__link"><i class="lni lni-linkedin-original"></i></a>
+                </li>
+            </ul>
+        </aside>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar fixed-bar">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </a>
+
+                        <a class="mobile-burger">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </a>
+
+                        <div class="navbar__menu col-lg-7">
+                            <ul class="navbar__item">
+                                <li class="navbar__items"><a href="#home" class="navbar__link active">Home <span></span></a>
+                                </li>
+                                <li class="navbar__items"><a href="#basic-waypoint" class="navbar__link">About <span></span></a> </li>
+                                <li class="navbar__items"><a href="#service" class="navbar__link">Services <span></span></a>
+                                </li>
+                                <li class="navbar__items"><a href="#portfolio" class="navbar__link">Portfolio <span></span></a>
+                                </li>
+                                <li class="navbar__items"><a href="#pricing" class="navbar__link">Pricing <span></span></a>
+                                </li>
+                                <li class="navbar__items"><a href="#experience" class="navbar__link">Experience <span></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="hero ">
+                        <div class="hero__text col-lg-6">
+                            <div class="title-letter hero__suptitle wow animate__animated animate__fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Hello I'm</div>
+                            <h1 class="title hero__title wow animate__animated animate__fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">John Smith</h1>
+                            <div class="black-text hero__subtitle hero__subtitle_black wow animate__animated animate__fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Professional Freelance Web
+                                Designer</div>
+                            <div class="grey-text hero__subtitle hero__subtitle_grey wow animate__animated animate__fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Lorem ipsum dolor sit amet,
+                                consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                magna aliquyam.</div>
+
+                            <button class="btn hero__btn wow animate__animated animate__fadeInUp "data-wow-duration="1.3s" data-wow-delay="1.5s">Heri Me</button>
+                        </div>
+
+                        <div class="hero__img wow animate__animated animate__fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="1.8s">
+                            <img src="img/hero.png" alt="Фото фрилансера">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="container">
+            <ul class="mobile-menu__item">
+                <li class="mobile-menu__items"><a href="#">Home</a></li>
+                <li class="mobile-menu__items"><a href="#">About</a></li>
+                <li class="mobile-menu__items"><a href="#">Service</a></li>
+                <li class="mobile-menu__items"><a href="#">Portfolio</a></li>
+                <li class="mobile-menu__items"><a href="#">Pricing</a></li>
+                <li class="mobile-menu__items"><a href="#">Experience</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="about" id="basic-waypoint">
+            <div class="container">
+                <div class="row">
+                    <div class="about__wrapper">
+                        <div class="about__img wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <img src="img/about_hero.png" alt="Скиллы фрилансера">
+                            <div class="about__shape"></div>
+                        </div>
+
+                        <div class="about__descr wow animate__animated animate__fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                            <h2 class="section-title about__title">About</h2>
+                            <div class="title about__subtitle">Why You Hire Me?</div>
+                            <ul class="line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="grey-text about__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                gubergren, no sea takimata sanctus.</div>
+
+                            <div class="about__progress-bar">
+                                <div class="skill-bar">
+                                    <div class="skill-bar__title">UI/UX Design</div>
+                                    <div class="skill-bar__inner" id="line-containerOne">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about__progress-bar">
+                                <div class="skill-bar">
+                                    <div class="skill-bar__title">Web Design</div>
+                                    <div class="skill-bar__inner" id="line-containerTwo"></div>
+                                </div>
+                            </div>
+
+                            <div class="about__progress-bar">
+                                <div class="skill-bar">
+                                    <div class="skill-bar__title">HTML/CSS</div>
+                                    <div class="skill-bar__inner" id="line-containerThree"></div>
+                                </div>
+                            </div>
+
+                            <div class="about__progress-bar">
+                                <div class="skill-bar">
+                                    <div class="skill-bar__title">Sketch</div>
+                                    <div class="skill-bar__inner" id="line-containerFour"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="service" id="service">
+            <div class="container">
+                <div class="service__text">
+                    <h2 class="section-title service__title">Services</h2>
+                    <div class="title service__subtitle">Service I Provide</div>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="service__wrapper">
+                    <div class="service__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="service__icon">
+                            <i class="lni lni-vector"></i>
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__content__title"><a href="#">Graphic Design</a></h3>
+                            <div class="service__content__descr">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore
+                                etdolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="service__icon">
+                            <i class="lni lni-layout"></i>
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__content__title"><a href="#">Web Design</a></h3>
+                            <div class="service__content__descr">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore
+                                etdolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="service__icon">
+                            <i class="lni lni-ux"></i>
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__content__title"><a href="#">UI/UX Design</a></h3>
+                            <div class="service__content__descr">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore
+                                etdolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                        <div class="service__icon">
+                            <i class="lni lni-code"></i>
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__content__title"><a href="#">Frontend Development</a></h3>
+                            <div class="service__content__descr">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore
+                                etdolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="1.4s">
+                        <div class="service__icon">
+                            <i class="lni lni-briefcase"></i>
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__content__title"><a href="#">Business Analysis</a></h3>
+                            <div class="service__content__descr">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore
+                                etdolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="1.7s">
+                        <div class="service__icon">
+                            <i class="lni lni-bullhorn"></i>
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__content__title"><a href="#">Digital Marketing</a></h3>
+                            <div class="service__content__descr">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore
+                                etdolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__text">
+                        <h2 class="section-title">Portfolio</h2>
+                        <div class="title">Latest Projects</div>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio__button">
+                        <button class="btn portfolio_button">All works</button>
+                    </div>
+                </div>
+
+                <div class="portfolio__slider">
+                    <!-- Slider main container -->
+                    <div class="swiper-one">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <!-- Первый слайд -->
+                            <div class="swiper-slide">
+                                <div class="portfolio__slide">
+                                    <div class="portfolio__img">
+                                        <img src="img/project-1.jpg" alt="App Landing Page">
+                                    </div>
+                                    <div class="portfolio__descr">
+                                        <a href="#">App Landing Page</a>
+                                        <div class="portfolio__descr__text">Web Design</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Второй слайд -->
+                            <div class="swiper-slide">
+                                <div class="portfolio__slide">
+                                    <div class="portfolio__img">
+                                        <img src="img/project-2.jpg" alt="Creative Agency Landing page">
+                                    </div>
+                                    <div class="portfolio__descr">
+                                        <a href="#">Creative Agency Landing page</a>
+                                        <div class="portfolio__descr__text">Web Design</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Третий слайд -->
+                            <div class="swiper-slide">
+                                <div class="portfolio__slide">
+                                    <div class="portfolio__img">
+                                        <img src="img/project-3.jpg" alt="App Landing Page">
+                                    </div>
+                                    <div class="portfolio__descr">
+                                        <a href="#">Search Engine Optimization</a>
+                                        <div class="portfolio__descr__text">Digital Marketing</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Четвертый слайд -->
+                            <div class="swiper-slide">
+                                <div class="portfolio__slide">
+                                    <div class="portfolio__img">
+                                        <img src="img/project-1.jpg" alt="App Landing Page">
+                                    </div>
+                                    <div class="portfolio__descr">
+                                        <a href="#">App Landing Page</a>
+                                        <div class="portfolio__descr__text">Web Design</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Пятый слайд -->
+                            <div class="swiper-slide">
+                                <div class="portfolio__slide">
+                                    <div class="portfolio__img">
+                                        <img src="img/project-2.jpg" alt="Creative Agency Landing page">
+                                    </div>
+                                    <div class="portfolio__descr">
+                                        <a href="#">Creative Agency Landing page</a>
+                                        <div class="portfolio__descr__text">Web Design</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Шестой слайд -->
+                            <div class="swiper-slide">
+                                <div class="portfolio__slide">
+                                    <div class="portfolio__img">
+                                        <img src="img/project-3.jpg" alt="App Landing Page">
+                                    </div>
+                                    <div class="portfolio__descr">
+                                        <a href="#">Search Engine Optimization</a>
+                                        <div class="portfolio__descr__text">Digital Marketing</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="swiper-button-prev">
+                            <i class="lni lni-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="lni lni-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price" id="pricing">
+            <div class="price_img">
+                <img src="img/shape-3.png" alt="Оформление">
+            </div>
+            <div class="container">
+                <div class="price__text">
+                    <h2 class="section-title">Pricing</h2>
+                    <div class="title price__subtitle">Pricing Plans</div>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="price__wrapper">
+                    <!-- Первая карточка -->
+                    <div class="price__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+
+                        <div class="price__card_title">Basic</div>
+                        <div class="price__card_sum">$75</div>
+                        <div class="price__card_descr">Only PSD Service</div>
+                        <hr>
+                        <ul class="price__card_item">
+                            <li class="price__card_items">
+                                <span class="check"><i class="lni lni-checkmark"></i></span>
+                                Graphic Design
+                            </li>
+                            <li class="price__card_items">
+                                <span class="check"><i class="lni lni-checkmark"></i></span>
+                                Web Design</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-close"></i></span>
+                                UI/UX</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-close"></i></span>
+                                HTML/CSS</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-close"></i></span>
+                                SEO Marketing</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-close"></i></span>
+                                Business Analysis</li>
+                        </ul>
+                        <button class="btn price__card_btn">Choose plan</button>
+                    </div>
+
+                    <!-- Вторая карточка -->
+                    <div class="price__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <span class="best">Best Value</span>
+                        <div class="price__card_title">Standard</div>
+                        <div class="price__card_sum">$250</div>
+                        <div class="price__card_descr">Complete Service</div>
+                        <hr>
+                        <ul class="price__card_item">
+                            <li class="price__card_items">
+                                <span class="check"><i class="lni lni-checkmark"></i></span>
+                                Graphic Design
+                            </li>
+                            <li class="price__card_items">
+                                <span class="check"><i class="lni lni-checkmark"></i></span>
+                                Web Design</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-checkmark"></i></span>
+                                UI/UX</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-checkmark"></i></span>
+                                HTML/CSS</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-close"></i></span>
+                                SEO Marketing</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-close"></i></span>
+                                Business Analysis</li>
+                        </ul>
+                        <button class="btn price__card_btn price__card_btn-active">Choose plan</button>
+                    </div>
+
+                    <!-- Третья карточка -->
+                    <div class="price__card wow animate__animated animate__fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+
+                        <div class="price__card_title">Premium</div>
+                        <div class="price__card_sum">$350</div>
+                        <div class="price__card_descr">Complete Service</div>
+                        <hr>
+                        <ul class="price__card_item">
+                            <li class="price__card_items">
+                                <span class="check"><i class="lni lni-checkmark"></i></span>
+                                Graphic Design
+                            </li>
+                            <li class="price__card_items">
+                                <span class="check"><i class="lni lni-checkmark"></i></span>
+                                Web Design</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-checkmark"></i></span>
+                                UI/UX</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-checkmark"></i></span>
+                                HTML/CSS</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-checkmark"></i></span>
+                                SEO Marketing</li>
+                            <li class="price__card_items">
+                                <span class="close"><i class="lni lni-checkmark"></i></span>
+                                Business Analysis</li>
+                        </ul>
+                        <button class="btn price__card_btn">Choose plan</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="client" id="basic-waypointTwo">
+            <div class="container">
+                <div class="client__text">
+                    <h2 class="section-title">Testmonials</h2>
+                    <div class="title client__subtitle">What Clients Says</div>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="swiper-two">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="client__wrapper">
+                                <div class="client__img">
+                                    <img src="img/author-1.jpg" alt="Musharof Chowdhury">
+                                </div>
+                                <div class="client__descr">
+                                    <div class="client__descr_title">Musharof Chowdhury</div>
+                                    <ul class="star">
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star"></i></li>
+                                    </ul>
+                                    <div class="client__descr_subtitle">Head of Ideas, UIdeck</div>
+                                    <div class="client__descr_text">Lorem ipsum dolor sit amet, consetetuad ipscing
+                                        elitr, sed diam nonumy eirmodem por invidunt ut labore et dolore magna aliquyam
+                                        erat sed diam.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="client__wrapper">
+                                <div class="client__img">
+                                    <img src="img/author-2.jpg" alt="Elon Musk">
+                                </div>
+                                <div class="client__descr">
+                                    <div class="client__descr_title">Elon Musk</div>
+                                    <ul class="star">
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                    </ul>
+                                    <div class="client__descr_subtitle">Founder, Tesla</div>
+                                    <div class="client__descr_text">Lorem ipsum dolor sit amet, consetetuad ipscing
+                                        elitr, sed diam nonumy eirmodem por invidunt ut labore et dolore magna aliquyam
+                                        erat sed diam.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="client__wrapper">
+                                <div class="client__img">
+                                    <img src="img/author-1.jpg" alt="Musharof Chowdhury">
+                                </div>
+                                <div class="client__descr">
+                                    <div class="client__descr_title">Musharof Chowdhury</div>
+                                    <ul class="star">
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star-filled"></i></li>
+                                        <li class="stars"><i class="lni lni-star"></i></li>
+                                    </ul>
+                                    <div class="client__descr_subtitle">Head of Ideas, UIdeck</div>
+                                    <div class="client__descr_text">Lorem ipsum dolor sit amet, consetetuad ipscing
+                                        elitr, sed diam nonumy eirmodem por invidunt ut labore et dolore magna aliquyam
+                                        erat sed diam.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="counter" >
+            <div class="container">
+                <div class="row">
+                    <div class="counter-block col-lg-3 wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="counter-block__icon">
+                            <i class="lni lni-checkmark-circle"></i>
+                        </div>
+                        <div class="counter-block__text">
+                            <h3 class="counter-block__text_title" id="project">0</h3>
+                            <div class="counter-block__text_subtitle">Projects Done</div>
+                        </div>
+                    </div>
+
+                    <div class="counter-block col-lg-3 wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <div class="counter-block__icon">
+                            <i class="lni lni-emoji-happy"></i>
+                        </div>
+                        <div class="counter-block__text">
+                            <h3 class="counter-block__text_title" id="client">70</h3>
+                            <div class="counter-block__text_subtitle">Satisfied Clients</div>
+                        </div>
+                    </div>
+
+                    <div class="counter-block col-lg-3 wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <div class="counter-block__icon">
+                            <i class="lni lni-bolt"></i>
+                        </div>
+                        <div class="counter-block__text">
+                            <h3 class="counter-block__text_title" id="activeproject">15</h3>
+                            <div class="counter-block__text_subtitle">Active Projects</div>
+                        </div>
+                    </div>
+
+                    <div class="counter-block col-lg-3 wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="counter-block__icon">
+                            <i class="lni lni-pyramids"></i>
+                        </div>
+                        <div class="counter-block__text">
+                            <h3 class="counter-block__text_title" id="years">5</h3>
+                            <div class="counter-block__text_subtitle">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exp" id="experience">
+            <div class="container">
+                <div class="exp__text">
+                    <h2 class="section-title exp__title">Experience</h2>
+                    <div class="title">Work Experience</div>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="exp__wrapper">
+                    <div class="exp__block wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="row">
+                            <div class="exp__block__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia
+                                magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem
+                                ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing
+                                elitr sed diam nonumy diam...</div>
+                            <div class="exp__block__number"> <span>01</span></div>
+                            <div class="exp__block__descr">
+                                <h3 class="exp__block__descr_title">Graphic Designer</h3>
+                                <div class="exp__block__descr_subtitle">PageBulb</div>
+                                <div class="exp__block__descr_date">March 2019- August 2024</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp__block wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="exp__block__descr text-align-rigth">
+                                <h3 class="exp__block__descr_title">UI/UX Designer</h3>
+                                <div class="exp__block__descr_subtitle">UIdeck</div>
+                                <div class="exp__block__descr_date">March 2019- August 2019</div>
+                            </div>
+                            <div class="exp__block__number"> <span>02</span></div>
+                            <div class="exp__block__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia
+                                magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem
+                                ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing
+                                elitr sed diam nonumy diam...</div>
+                        </div>
+                    </div>
+
+                    <div class="exp__block wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="row">
+                            <div class="exp__block__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia
+                                magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem
+                                ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing
+                                elitr sed diam nonumy diam...</div>
+                            <div class="exp__block__number"> <span>03</span></div>
+                            <div class="exp__block__descr">
+                                <h3 class="exp__block__descr_title">Web Developer</h3>
+                                <div class="exp__block__descr_subtitle">GrayGrids</div>
+                                <div class="exp__block__descr_date">June 2018- August 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="callback wow animate__animated animate__fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+            <div class="container">
+                <div class="callback__wrapper col-lg-12">
+                    <div class="callback__text">
+                        <h2 class="callback__text__title">Have Any Project in Mind?</h2>
+                        <ul class="line line__white">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="callback__text__descr">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam non eirmod tempor invidunt labore.</div>
+                    </div>
+
+                    <div class="callback__btn">
+                        <button class="btn callback__btn__button">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/logo.svg" alt="Логотип"></a>
+                </div>
+
+                <div class="footer__social">
+                    <ul class="footer__social__item">
+                        <li class="footer__social__items">
+                            <a href="#" class="footer__social__link"><i class="lni lni-facebook-filled"></i></a>
+                        </li>
+        
+                        <li class="footer__social__items">
+                            <a href="#" class="footer__social__link"><i class="lni lni-twitter-filled"></i></a>
+                        </li>
+        
+                        <li class="footer__social__items">
+                            <a href="#" class="footer__social__link"><i class="lni lni-instagram-filled"></i></a>
+                        </li>
+        
+                        <li class="footer__social__items">
+                            <a href="#" class="footer__social__link"><i class="lni lni-linkedin-original"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__email">
+                    <a href="mailto:sayk.tiger09@gmail.com" class="footer__email__link">[email protected]</a>
+                </div>
+
+                <div class="footer__menu">
+                    <ul class="footer__menu__item">
+                        <li class="footer__menu__items"><a href="#home">Home</a></li>
+                        <li class="footer__menu__items"><a href="#basic-waypoint">About Us</a></li>
+                        <li class="footer__menu__items"><a href="#service">Service</a></li>
+                        <li class="footer__menu__items"><a href="#portfolio">Portfolio</a></li>
+                        <li class="footer__menu__items"><a href="#pricing">Pricing</a></li>
+                        <li class="footer__menu__items"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__author">
+                    Template Designed and Developed by <a target="_blank" href="https://t.me/Sayko003">Sayko003</a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Подключение wow.js для произведение анимации во время скролла -->
+    <script src="js/wow.min.js"></script>
+    <!-- Иницализируем wow.js -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Подключение слайдеров -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Подключаем скрипт чтобы скрипты работали до того как пользователь дошел до блока -->
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/waypoints.debug.js"></script>
+    <!-- Подключаем прогресс бар для индикаторов -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Мои скрипты -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

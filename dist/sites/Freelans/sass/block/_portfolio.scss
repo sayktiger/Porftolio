@@ -1,0 +1,78 @@
+.portfolio{
+    padding: 80px 0;
+    overflow: hidden !important;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &_button{
+        background-color: transparent;
+        color: #646f87;
+        border: 2px solid #646f87;
+        &:hover{
+            background-color:rgba($color: #646f87, $alpha: 0.4);
+        }
+    }
+    &__slide{
+        overflow: hidden;
+    }
+    .swiper-one {
+        width: 100%;
+        min-height: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__img{
+        width: 350px;
+        height: 350px;
+    }
+    &__descr{
+        margin-top: 10px;
+        a{
+            font-size: 20px;
+            font-weight: 600;
+            color: #293651;
+            transition: all .3s ease-out 0s;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        &__text{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #646f87;
+            margin: 0;
+        }
+    }
+    .button-wrapper{
+        position: relative;
+        display: flex;
+        transform:translateX(45%);
+        margin-top: 30px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        &:after{
+            display: none;
+        }
+        font-size: 18px;
+        color: #646f87;
+        line-height: 24px; 
+        margin: 0;
+        position: relative;
+        transition: all 0.3s;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    .swiper-button-prev{
+        margin-right: 40px;
+    }
+    
+}

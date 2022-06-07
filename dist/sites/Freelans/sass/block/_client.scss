@@ -1,0 +1,78 @@
+.client{
+    padding: 80px 0;
+    &__text{
+        text-align: center;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+    &__img{
+        img{
+            border-radius: 50px;
+            border-bottom-right-radius: 0;
+            max-width: 186px;
+            max-height: 186px;
+        }
+    }
+    &__descr{
+        max-width:324px;
+        position: relative;
+        &_title{
+            font-size: 18px;
+            font-weight: 600;
+            color: $title;
+            margin-bottom: 5px;
+        }
+        &_subtitle{
+            font-size: 14px;
+            color: $grey;
+            margin-bottom: 20px;
+        }
+        &_text{
+            font-size: 16px;
+            color: $grey;
+        }
+    }
+    .swiper-two{
+        overflow: hidden;
+    }
+    .swiper-slider{
+        min-height: 0;
+    }
+    .star{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        &s{
+            font-size: 14px;
+            color: #ffae34;
+            margin: 0 2px;
+        }
+    }
+    .swiper-pagination{
+        position: relative;
+        margin-top: 50px;
+    }
+    .swiper-pagination-bullet{
+        width: 13px;
+        height: 13px;
+        border: 3px solid rgb(0, 167, 142);
+        border-radius: 50%;
+        background-color: transparent;
+        transition: all .3s ease-out 0s;
+    }
+    .swiper-pagination-bullet-active{
+        font-size: 0;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #00a78e;
+        border-color: #00a78e;
+        transition: all .3s ease-out 0s;
+    }
+    
+}

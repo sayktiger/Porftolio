@@ -1,0 +1,88 @@
+.footer{
+    padding: 100px 0;
+    background-color: $bg-color;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__logo{
+        margin-bottom: 30px;
+    }
+    &__social{
+        margin-bottom: 10px;
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &s{
+                margin: 0 10px;
+                a{
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    color: $grey;
+                    background-color: rgba(41, 54, 81, .07);
+                    transition: all .3s ease-out 0s;
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    &__email{
+        margin-bottom: 20px;
+        a{
+            font-size: 44px;
+            font-weight: 600;
+            color: $main-color;
+            transition: all 0.3s;
+            &:hover{
+                text-decoration: none;
+                color: rgba($color: $main-color, $alpha: 0.7)
+            }
+        }
+    }
+
+    &__menu{
+        margin-bottom: 40px;
+        width: 50%;
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            &s{
+                a{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $title;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $main-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &__author{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $grey;
+        margin: 0;
+        a{
+            color:$main-color;
+            transition: all 0.3s;
+            &:hover{
+                color: rgba($color: $main-color, $alpha: 0.7);
+                text-decoration: none;
+            }
+        }
+    }
+}

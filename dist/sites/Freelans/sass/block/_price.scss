@@ -1,0 +1,100 @@
+.price{
+    padding: 80px 0;
+    position: relative;
+    background-color: #f8f8f8;
+    
+    &_img{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__wrapper{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card{
+        max-width: 350px;
+        width: 30%;
+        padding: 40px 50px 50px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px 0 rgba(196, 196, 196,0.3);
+        background-color: #fff;
+        position: relative;
+        hr{
+            width: 100%;
+            text-align: center;
+            margin: 30px 0 15px 0;
+        }
+        &_title{
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: $title;
+        }
+        &_sum{
+            font-size: 35px;
+            line-height: 40px;
+            color: $main-color;
+            font-weight: 600;
+            margin-bottom:10px ;
+        }
+        &_descr{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $grey;
+            margin: 0;
+        }
+        &_item{
+            &s{
+                font-size: 16px;
+                color: $grey;
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+                span{
+                    display: inline-block;
+                    margin-right: 17px;
+                }
+            }
+        }
+        &_btn{
+            display: block;
+            margin-top: 20px;
+            background-color: transparent;
+            color: #646f87;
+            border: 2px solid #646f87;
+            border-radius: 50px;
+            &:hover{
+                background-color: rgba($color: #646f87, $alpha: 0.2);
+            }
+            &-active{
+                background-color: $main-color;
+                color: $white;
+                border: none;
+                &:hover{
+                    background-color: rgba($color: $main-color, $alpha: 0.7);
+                }
+            }
+        }
+    }
+    .best{
+        display: block;
+        font-size: 13px;
+        background-color: $main-color;
+        line-height: 30px;
+        color: $white;
+        text-align: center;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 25px;
+        right: -136px;
+        width: 100%;
+    }
+}
