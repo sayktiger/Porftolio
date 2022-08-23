@@ -1,6 +1,6 @@
 .promo{
     position: relative;
-    padding-top: 205px;
+    padding-top: 100px;
     background: linear-gradient(-45deg, #ff7c54, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -23,11 +23,10 @@
         align-items: center;
     }
     &__img{
-
+        max-width: 30%;
         img{
-            max-width: 300px;
-            max-height: 300px;
-            border-radius: 100%;
+            max-width: 100%;
+            border-radius: 24px;
         }
     }
     &__title{

@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mover</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header class="hero">
+    <div class="hero__wrapper">
+        <nav class="hero__menu">
+            <div class="hero__logo">
+                <a href="#">
+                    <svg class="header__svg">
+                        <use xlink:href="img/sprites/sprite.svg#header-logo"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="hero__list">
+                <li class="hero__link"><a href="#price">Цены</a></li>
+                <li class="hero__link"><a href="#reviews">Отзывы</a></li>
+                <li class="hero__link"><a href="#autopark">Автопарк</a></li>
+                <li class="hero__link"><a href="#warrior">Военным / пенсионерам</a></li>
+            </ul>
+
+            <div class="hero__phone">
+                <a href="tel:+78005054930">8 (800) 505-49-30</a>
+                <button class="hero__subtel">заказать обратный звонок</button>
+            </div>
+
+            <div class="burger">
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero__container">
+        <div class="hero__main">
+            <div class="hero__text">
+                <h1 class="hero__title">Квартирный переезд по России под ключ</h1>
+                <h2 class="hero__subtitle">С гарантией по договору и страхованием груза на 1 млн. рублей.</h2>
+                <h2 class="hero__subtitle">Предоставляем все отчетные документы для получения компенсаций.</h2>
+                <button class="hero__button">Узнать больше о преимуществах</button>
+            </div>
+
+            <div class="hero__form">
+                <form action="#">
+                    <div class="hero__adress">
+                        <div class="hero__adress_a">
+                            <input id="adress-a" type="text" name="text" placeholder="Откуда">
+                        </div>
+
+                        <div class="hero__adress_b">
+                            <input id="adress-b" type="text" name="text" placeholder="Куда">
+                        </div>
+                        
+                    </div>
+
+                    <div class="hero__car">
+                        <div class="hero__cars">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1">
+                                <div class="hero__radio">
+                                    <svg>
+                                        <use xlink:href="img/sprites/sprite.svg#hero-trucking"></use>
+                                    </svg>
+                                    <div class="hero__weight">1.5 тонны</div>
+                                    <div class="hero__price">от 4900 ₽</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="hero__cars">
+                            <input id="radio-2" type="radio" name="radio" value="2" >
+                            <label for="radio-2">
+                                <div class="hero__radio">
+                                    <svg>
+                                        <use xlink:href="img/sprites/sprite.svg#hero-trucking"></use>
+                                    </svg>
+                                    <div class="hero__weight">3 тонны</div>
+                                    <div class="hero__price">от 7900 ₽</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="hero__cars">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">
+                                <div class="hero__radio">
+                                    <svg>
+                                        <use xlink:href="img/sprites/sprite.svg#hero-trucking"></use>
+                                    </svg>
+                                    <div class="hero__weight">5 тонн</div>
+                                    <div class="hero__price">от 12900 ₽</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="hero__cars">
+                            <input id="radio-4" type="radio" name="radio" value="4">
+                            <label for="radio-4">
+                                <div class="hero__radio">
+                                    <svg>
+                                        <use xlink:href="img/sprites/sprite.svg#hero-trucking"></use>
+                                    </svg>
+                                    <div class="hero__weight">10 тонн</div>
+                                    <div class="hero__price">от 14900 ₽</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="hero__contats">
+                        <div class="hero__name">
+                            <input type="text" placeholder="Как вас зовут" name="name">
+                        </div>
+
+                        <div class="hero__telphone">
+                            <input type="text" placeholder="Контактный телефон" name="tel">
+                        </div>
+                    </div>
+
+                    <div class="hero__submit">
+                        <button type="submit">
+                            Бесплатно расчитать 
+                            <span>запрос цены ни к чему не обязывает</span> 
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+        
+    
+</header>
+        <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__header">
+            <div class="mobile-menu__logo">
+                <a href="#">
+                    <svg class="header__svg">
+                        <use xlink:href="img/sprites/sprite.svg#header-logo"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <a class="mobile-menu__tel" href="tel:+78005054930">8 (800) 505-49-30</a>
+
+            <div class="mobile-menu__close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__link"><a href="index.html#price">Цены</a></li>
+            <li class="mobile-menu__link"><a href="index.html#reviews">Отзывы</a></li>
+            <li class="mobile-menu__link"><a href="index.html#autopark">Автопарк</a></li>
+            <li class="mobile-menu__link"><a href="index.html#warrior">Военным / пенсионерам</a></li>
+        </ul>
+    </div>
+</div>
+        <section class="comfort">
+    <div class="comfort__container">
+        <h2 class="comfort__title">Удобно и выгодно</h2>
+        <div class="comfort__wrapper">
+            <!-- manager -->
+            <div class="comfort__block">
+                <svg class="comfort__svg">
+                    <use xlink:href="img/sprites/sprite.svg#comfort-manager"></use>
+                </svg>
+                <h3 class="comfort__text">Персональный менеджер</h3>
+                <p class="comfort__descr"> Осуществляет <span>контроль на всех этапах</span> переезда (от подбора специалистов до составления маршрута для водителя)</p>
+            </div>
+
+            <!-- document -->
+            <div class="comfort__block">
+                <svg class="comfort__svg">
+                    <use xlink:href="img/sprites/sprite.svg#comfort-document"></use>
+                </svg>
+                <h3 class="comfort__text">Документы для компенсации</h3>
+                <p class="comfort__descr"> Предоставляем <span>полный комплект документов</span> для компенсации вашего переезда</p>
+            </div>
+
+            <!-- shield -->
+            <div class="comfort__block">
+                <svg class="comfort__svg">
+                    <use xlink:href="img/sprites/sprite.svg#comfort-shield"></use>
+                </svg>
+                <h3 class="comfort__text">Всё имущество застраховано</h3>
+                <p class="comfort__descr">Несем полную ответственность за сохранность имущества по договору</p>
+            </div>
+
+            <!-- package -->
+            <div class="comfort__block">
+                <svg class="comfort__svg">
+                    <use xlink:href="img/sprites/sprite.svg#comfort-package"></use>
+                </svg>
+                <h3 class="comfort__text">От двери до двери</h3>
+                <p class="comfort__descr">Без дополнительных выгрузок на терминалах и складах</p>
+            </div>
+
+            <!-- wedding-cost -->
+            <div class="comfort__block">
+                <svg class="comfort__svg">
+                    <use xlink:href="img/sprites/sprite.svg#comfort-wedding-cost"></use>
+                </svg>
+                <h3 class="comfort__text">Прозрачное ценообразование</h3>
+                <p class="comfort__descr">Стоимость услуги закреплена в договоре. Никаких сюрпризов в виде доплат на месте.</p>
+            </div>
+
+            <!-- delivery-truck -->
+            <div class="comfort__block">
+                <svg class="comfort__svg">
+                    <use xlink:href="img/sprites/sprite.svg#comfort-delivery-truck"></use>
+                </svg>
+                <h3 class="comfort__text">Любые виды перевозок</h3>
+                <p class="comfort__descr">Переезд на ваш выбор как отдельной машиной, сборным грузом, контейнером, самолетом и судном</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="quiz">
+    <div class="quiz__container">
+        <h2 class="quiz__title">Пройдите тест и узнайте стоимость перевозки</h2>
+        <div class="quiz__subtitle">На тест уйдет меньше 1 минуты, а мы закрепим скидку за вашим номером</div>
+
+        <div class="quiz__form">
+            <h3 class="quiz__package">Какая упаковка у ваших вещей?</h3>
+            <form action="#">
+                <div class="quiz__flex">
+                    <input type="checkbox" name="Box" value="Box">
+                    <label for="Box" class="quiz__checkbox">Коробки</label>
+                </div>
+                
+                <div class="quiz__flex">
+                    <input type="checkbox" name="Pallets" value="Pallets">
+                    <label for="Pallets" class="quiz__checkbox">Паллеты</label>
+                </div>
+                
+
+                <div class="quiz__flex">
+                    <input type="checkbox" name="Drawer" value="Drawer">
+                    <label for="Drawer" class="quiz__checkbox">Ящики</label>
+                </div class="quiz__flex">
+
+                <div class="quiz__flex">
+                    <input type="checkbox" name="Bag" value="Bag">
+                    <label for="Bag" class="quiz__checkbox">Мешки</label>
+                </div >
+
+                <div class="quiz__flex">
+                    <input type="checkbox" name="Bunch" value="Bunch">
+                    <label for="Bunch" class="quiz__checkbox">Связки</label>
+                </div>
+
+                <div class="quiz__flex">
+                    <input type="checkbox" name="No" value="No">
+                    <label for="No" class="quiz__checkbox">Нет</label>
+                </div>
+
+                <div class="quiz__flex">
+                    <input type="checkbox" name="Other" value="Other">
+                    <label for="Other" class="quiz__checkbox">Другая</label>
+                </div>
+
+                <div class="quiz__wrapper">
+                    <div class="current"> 6/6</div>
+                    <buttun class="quiz__button" type="submit">Далее</buttun>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+        <section class="step">
+    <div class="step__container">
+        <div class="step__wrapper">
+            <div class="step__block">
+                <div class="step__number">01.</div>
+                <p class="step__descr">Свяжитесь с нами по телефону<br> <a href="tel:+78005054930">8 (800) 505-49-30</a> <br> или <a href="#">заполните заявку</a> на сайте</p>
+            </div>
+
+            <div class="step__block">
+                <div class="step__number">02.</div>
+                <p class="step__descr">Заключаете договор с БНК. Мы <br> организуем ваш переезд «под ключ»,<br> избавив вас от лишних хлопот</p>
+            </div>
+
+            <div class="step__block">
+                <div class="step__number">03.</div>
+                <p class="step__descr">Заезжаете в новую квартиру или офис и празднуете новоселье!</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="document" id="warrior">
+    <div class="document__container">
+        <div class="document__wrapper">
+            <h2 class="document__title">Пакет документов для компенсации затрат военнослужащим и пенсионерам переезжающих с районов Крайнего Севера</h2>
+            <div class="document__descr">
+                <div class="document__suplist">Бесплатно отправим документы по почте. Вы получите оригиналы документов в течение 7 дней после заключения договора:</div>
+                <ul class="document__list">
+                    <li class="document__item">Договор</li>
+                    <li class="document__item">Заявка</li>
+                    <li class="document__item">Счет</li>
+                    <li class="document__item">Чек</li>
+                    <li class="document__item">Акт выполненных работ</li>
+                    <li class="document__item">Путевой лист</li>
+                    <li class="document__item">Справка</li>
+                    <li class="document__item">Учредительные документы</li>
+                </ul>
+
+                <div class="document__buttons">
+                    <button class="document__form modal-form-click">Оставить заявку</button>
+                    <button class="document__download">Образец документов <span>скачайте и покажите бухгалетеру</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="help">
+    <div class="help__container">
+        <div class="help__wrapper">
+            <div class="help__text">
+                <h2 class="help__title">Мы всегда рядом, чтобы помочь</h2>
+                <p class="help__descr">Заботливая команда поддержки БНК всегда на связи и готова ответить на любые вопросы. Мы поможем выбрать правильный транспорт, расскажем обо всех нюансах переезда и подскажем, как сэкономить.</p>
+                <form action="#" class="help__form">
+                    <input type="text" placeholder="+7 999 9999 99 99">
+                    <button class="help__submit" type="submit">Жду звонка</button>
+                </form>
+            </div>
+
+            <div class="help__photo">
+                <img src="img/help/photo.webp" alt="Photo">
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="autopark" id="autopark">
+    <div class="autopark__container">
+        <h2 class="autopark__title">Автопарк</h2>
+        <div class="autopark__wrapper">
+            <div class="autopark__tabs">
+                <div class="autopark__item autopark__item_active">1,5 тонны</div>
+                <div class="autopark__item">3 тонны</div>
+                <div class="autopark__item">5 тонн</div>
+                <div class="autopark__item">10 тонн</div>
+                <div class="autopark__item">20 тонн</div>
+                <div class="autopark__item">20 тонн с перевозкой авто</div>
+            </div>
+            <!-- 1 -->
+            <div class="autopark__block fade autopark__block_active">
+                <div class="autopark__img">
+                    <img src="img/autopark/cars.webp" alt="Грузовик">
+                </div>
+
+                <div class="autopark__text">
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Грузоподъемность:</div>
+                        <div class="autopark__descr_value">1.5—2 тонны</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Объем кузова:</div>
+                        <div class="autopark__descr_value">12-20 м3</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Длина:</div>
+                        <div class="autopark__descr_value">3—5 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Высота:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Ширина:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Цена:</div>
+                        <div class="autopark__descr_value">от 7200 ₽</div>
+                    </div>
+
+                    <div class="autopark__button">
+                        <button class="autopark__modal modal-info-click">Что можно перевезти?</button>
+                        <button class="autopark__form modal-form-click">Оставить заявку</button>
+                    </div>
+                </div>    
+            </div>
+            <!-- 2 -->
+            <div class="autopark__block fade">
+                <div class="autopark__img">
+                    <img src="img/autopark/cars.webp" alt="Грузовик">
+                </div>
+
+                <div class="autopark__text">
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Грузоподъемность:</div>
+                        <div class="autopark__descr_value">1.5—2 тонны</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Объем кузова:</div>
+                        <div class="autopark__descr_value">12-20 м3</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Длина:</div>
+                        <div class="autopark__descr_value">3—5 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Высота:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Ширина:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Цена:</div>
+                        <div class="autopark__descr_value">от 7200 ₽</div>
+                    </div>
+
+                    <div class="autopark__button">
+                        <button class="autopark__modal modal-info-click">Что можно перевезти?</button>
+                        <button class="autopark__form modal-form-click">Оставить заявку</button>
+                    </div>
+                </div>    
+            </div>
+            <!-- 3 -->
+            <div class="autopark__block fade">
+                <div class="autopark__img">
+                    <img src="img/autopark/cars.webp" alt="Грузовик">
+                </div>
+
+                <div class="autopark__text">
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Грузоподъемность:</div>
+                        <div class="autopark__descr_value">1.5—2 тонны</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Объем кузова:</div>
+                        <div class="autopark__descr_value">12-20 м3</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Длина:</div>
+                        <div class="autopark__descr_value">3—5 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Высота:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Ширина:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Цена:</div>
+                        <div class="autopark__descr_value">от 7200 ₽</div>
+                    </div>
+
+                    <div class="autopark__button">
+                        <button class="autopark__modal modal-info-click">Что можно перевезти?</button>
+                        <button class="autopark__form modal-form-click">Оставить заявку</button>
+                    </div>
+                </div>    
+            </div>
+            <!-- 4 -->
+            <div class="autopark__block fade">
+                <div class="autopark__img">
+                    <img src="img/autopark/cars.webp" alt="Грузовик">
+                </div>
+
+                <div class="autopark__text">
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Грузоподъемность:</div>
+                        <div class="autopark__descr_value">1.5—2 тонны</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Объем кузова:</div>
+                        <div class="autopark__descr_value">12-20 м3</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Длина:</div>
+                        <div class="autopark__descr_value">3—5 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Высота:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Ширина:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Цена:</div>
+                        <div class="autopark__descr_value">от 7200 ₽</div>
+                    </div>
+
+                    <div class="autopark__button">
+                        <button class="autopark__modal modal-info-click">Что можно перевезти?</button>
+                        <button class="autopark__form modal-form-click">Оставить заявку</button>
+                    </div>
+                </div>    
+            </div>
+            <!-- 5 -->
+            <div class="autopark__block fade">
+                <div class="autopark__img">
+                    <img src="img/autopark/cars.webp" alt="Грузовик">
+                </div>
+
+                <div class="autopark__text">
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Грузоподъемность:</div>
+                        <div class="autopark__descr_value">1.5—2 тонны</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Объем кузова:</div>
+                        <div class="autopark__descr_value">12-20 м3</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Длина:</div>
+                        <div class="autopark__descr_value">3—5 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Высота:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Ширина:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Цена:</div>
+                        <div class="autopark__descr_value">от 7200 ₽</div>
+                    </div>
+
+                    <div class="autopark__button">
+                        <button class="autopark__modal modal-info-click">Что можно перевезти?</button>
+                        <button class="autopark__form modal-form-click">Оставить заявку</button>
+                    </div>
+                </div>    
+            </div>
+            <!-- 6 -->
+            <div class="autopark__block fade">
+                <div class="autopark__img">
+                    <img src="img/autopark/cars.webp" alt="Грузовик">
+                </div>
+
+                <div class="autopark__text">
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Грузоподъемность:</div>
+                        <div class="autopark__descr_value">1.5—2 тонны</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Объем кузова:</div>
+                        <div class="autopark__descr_value">12-20 м3</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Длина:</div>
+                        <div class="autopark__descr_value">3—5 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Высота:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Ширина:</div>
+                        <div class="autopark__descr_value">2 м</div>
+                    </div>
+
+                    <div class="autopark__descr">
+                        <div class="autopark__descr_title">Цена:</div>
+                        <div class="autopark__descr_value">от 7200 ₽</div>
+                    </div>
+
+                    <div class="autopark__button">
+                        <button class="autopark__modal modal-info-click">Что можно перевезти?</button>
+                        <button class="autopark__form modal-form-click">Оставить заявку</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="autopark__whatsapp">Затрудняетесь в выборе автомобиля?<br> Присылайте фото в <a href="#">WhatsApp</a> и мы поможем выбрать <br> оптимальный вариант </div>
+    </div>
+</section>
+        <section class="clients">
+    <div class="clients__container">
+        <h2 class="clients__title">Узнайте, как БНК помогает клиентам</h2>
+        <div class="clients__wrapper">
+            <!-- 1 -->
+            <a href="mover-keys.html" class="clients__link clients__link_one">
+                <div class="clients__block">
+                    <p class="clients__way">Сургут - Москва</p>
+                    <h3 class="clients__descr">Как успеть собрать 3 комнатную квартиру за 24 часа и сэкономить на грузчиках</h3>
+                </div>
+            </a>
+
+            <!-- 2 -->
+            <a href="mover-keys.html" class="clients__link clients__link_two">
+                <div class="clients__block">
+                    <p class="clients__way">Хабаровск - Сочи</p>
+                    <h3 class="clients__descr">Перевозим квартиру, когда собственник в это время в походе в Горном Алтае</h3>
+                </div>
+            </a>
+
+            <!-- 3 -->
+            <a href="mover-keys.html" class="clients__link clients__link_three">
+                <div class="clients__block">
+                    <p class="clients__way">Барнаул - Калининград</p>
+                    <h3 class="clients__descr">Перевозим кота через границу с Польшей без справок и паспорта</h3>
+                </div>
+            </a>
+
+            <!-- 4 -->
+            <a href="mover-keys.html" class="clients__link clients__link_four">
+                <div class="clients__block">
+                    <p class="clients__way">Якутск - Симферополь</p>
+                    <h3 class="clients__descr">Правильный перезд с Севера с компенсацией и хорошим настроением</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+        <section class="reviews" id="reviews">
+    <div class="reviews__container">
+        <h2 class="reviews__title">Отзывы о переездах с БНК</h2>
+        <div class="reviews__subtitle">Реальные отзывы из мессенджеров и социальных сетей</div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <!-- 1 -->
+                <div class="swiper-slide">
+                    <div class="reviews__descr">Перебрались с семьей жить в Москву. Нужна была к хорошая ТК для перевозки бытовой техники и мебели. Нашли компанию Mover и приняли решение воспользоваться ее услугами перевозки. Расстояние немалое, поэтому сами поехали на поезде, а вещи упаковали и отправили на огромной машине. Удобно перевозить грузы, когда работаешь по договору и точно знаешь сроки доставки. Здорово, что через личный кабинет можно отслеживать, где находится машина. Перевозка осуществлялась под моим контролем! Спасибо менеджеру за профессионализм!</div>
+                    <div class="reviews__author">
+                        <div class="reviews__img">
+                            <img src="img/reviews/Alina.jpg" alt="Алина">
+                        </div>
+                        <div class="reviews__text">
+                            <div class="reviews__name">Алёна Игоревна</div>
+                            <a href="#" class="reviews__whatsapp">оригинал отзыва</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#reviews-next"></use>
+            </svg>
+        </div>
+        <div class="swiper-button-next">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#reviews-next"></use>
+            </svg>
+        </div>
+        <button class="reviews__button">Написать отзыв <span>и получить скидку 5% на следущий переезд</span></button>
+        <button class=" reviews__button  reviews__mobile">Следущий отзыв</span></button>
+    </div>
+</section>
+        <section class="move">
+    <div class="move__container">
+        <h2 class="move__title">Фото наших переездов</h2>
+    </div>
+    <div class="move__wrapper">
+        <div class="swiperTwo">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-1@2x.jpg" src="img/move/move-1.jpg" alt="Москва - Калининград">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">13.09.2021</div>
+                            <div class="move__way">Москва - Калининград</div>
+                        </div>
+                    </div>
+
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-2@2x.jpg" src="img/move/move-2.jpg" alt="Москва - Калининград">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">13.09.2021</div>
+                            <div class="move__way">Москва - Калининград</div>
+                        </div>
+                    </div>
+
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-3@2x.jpg" src="img/move/move-3.jpg" alt="Москва - Калининград">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">13.09.2021</div>
+                            <div class="move__way">Москва - Калининград</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-4@2x.jpg" src="img/move/move-4.jpg" alt="Барнаул - Санкт-Петербург">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">12.09.2021</div>
+                            <div class="move__way">Барнаул - Санкт-Петербург</div>
+                        </div>
+                    </div>
+
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-5@2x.jpg" src="img/move/move-5.jpg" alt="Барнаул - Санкт-Петербург">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">12.09.2021</div>
+                            <div class="move__way">Барнаул - Санкт-Петербург</div>
+                        </div>
+                    </div>
+
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-6@2x.jpg" src="img/move/move-6.jpg" alt="Барнаул - Санкт-Петербург">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">12.09.2021</div>
+                            <div class="move__way">Барнаул - Санкт-Петербург</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-7@2x.jpg" src="img/move/move-7.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-8@2x.jpg" src="img/move/move-8.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-9@2x.jpg" src="img/move/move-9.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-7@2x.jpg" src="img/move/move-7.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-8@2x.jpg" src="img/move/move-8.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-9@2x.jpg" src="img/move/move-9.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-7@2x.jpg" src="img/move/move-7.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-8@2x.jpg" src="img/move/move-8.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                    <div class="move__block">
+                        <div class="move__img">
+                            <img data-action="lumos" data-lumos-src="img/move/move-9@2x.jpg" src="img/move/move-9.jpg" alt="Уфа - Томск">
+                        </div>
+                        <div class="move__text">
+                            <div class="move__data">14.09.2021</div>
+                            <div class="move__way">Уфа - Томск</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="move__mobile">
+            <div class="move__block">
+                <div class="move__img">
+                    <img data-action="lumos" data-lumos-src="img/move/move-1@2x.jpg" src="img/move/move-1.jpg" alt="Москва - Калининград">
+                </div>
+                <div class="move__text">
+                    <div class="move__data">13.09.2021</div>
+                    <div class="move__way">Москва - Калининград</div>
+                </div>
+            </div>
+
+            <div class="move__block">
+                <div class="move__img">
+                    <img data-action="lumos" data-lumos-src="img/move/move-2@2x.jpg" src="img/move/move-2.jpg" alt="Москва - Калининград">
+                </div>
+                <div class="move__text">
+                    <div class="move__data">13.09.2021</div>
+                    <div class="move__way">Москва - Калининград</div>
+                </div>
+            </div>
+
+            <div class="move__block">
+                <div class="move__img">
+                    <img data-action="lumos" data-lumos-src="img/move/move-3@2x.jpg" src="img/move/move-3.jpg" alt="Москва - Калининград">
+                </div>
+                <div class="move__text">
+                    <div class="move__data">13.09.2021</div>
+                    <div class="move__way">Москва - Калининград</div>
+                </div>
+            </div>
+
+            <div class="move__block">
+                <div class="move__img">
+                    <img data-action="lumos" data-lumos-src="img/move/move-3@2x.jpg" src="img/move/move-3.jpg" alt="Москва - Калининград">
+                </div>
+                <div class="move__text">
+                    <div class="move__data">13.09.2021</div>
+                    <div class="move__way">Москва - Калининград</div>
+                </div>
+            </div>
+
+            <button class="move__mobile__button">Показать еще</button>
+        </div>
+    </div>
+    
+</section>
+        <section class="response">
+    <div class="response__container">
+        <h2 class="response__title">Ответы на вопросы</h2>
+
+        <div class="accordion">
+            <div class="accordion__intro">
+                <h3 class="accordion__title">Вы сможете предоставить грузчиков при переезде в другой город?</h3>
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#if-arrow"></use>
+                </svg>
+            </div>
+            <div class="accordion__content">
+                <p class="accordion__descr">Для компенсации оплаты перевозки военнослужащим и работникам предприятий нужно запросить необходимые документы в бухгалтерии, а также взять справку о стоимости перевозки отдельного контейнера ж/д сообщением. Мы подготовим пакет документов для компенсации расходов на переезд работодателем согласно статье 326 ТК РФ.</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion__intro">
+                <h3 class="accordion__title">Что означает переезд «дверь в дверь»?</h3>
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#if-arrow"></use>
+                </svg>
+            </div>
+            <div class="accordion__content">
+                <p class="accordion__descr">Для компенсации оплаты перевозки военнослужащим и работникам предприятий нужно запросить необходимые документы в бухгалтерии, а также взять справку о стоимости перевозки отдельного контейнера ж/д сообщением. Мы подготовим пакет документов для компенсации расходов на переезд работодателем согласно статье 326 ТК РФ.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion__intro">
+                <h3 class="accordion__title">Стоимость перевозки рассчитываете за кг (куб) или за км?</h3>
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#if-arrow"></use>
+                </svg>
+            </div>
+            <div class="accordion__content">
+                <p class="accordion__descr">Для компенсации оплаты перевозки военнослужащим и работникам предприятий нужно запросить необходимые документы в бухгалтерии, а также взять справку о стоимости перевозки отдельного контейнера ж/д сообщением. Мы подготовим пакет документов для компенсации расходов на переезд работодателем согласно статье 326 ТК РФ.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion__intro">
+                <h3 class="accordion__title">Что требуется для получения компенсации стоимости переезда от организации?</h3>
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#if-arrow"></use>
+                </svg>
+            </div>
+            <div class="accordion__content">
+                <p class="accordion__descr">Для компенсации оплаты перевозки военнослужащим и работникам предприятий нужно запросить необходимые документы в бухгалтерии, а также взять справку о стоимости перевозки отдельного контейнера ж/д сообщением. Мы подготовим пакет документов для компенсации расходов на переезд работодателем согласно статье 326 ТК РФ.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="free">
+    <div class="free__container">
+        <h2 class="free__title">Бесплатный расчет стоимости</h2>
+        <div class="free__form">
+            <form action="#">
+                <div class="free__adress">
+                    <div class="free__adress_a">
+                        <input id="adress-free-a" type="text" name="text" placeholder="Откуда">
+                    </div>
+
+                    <div class="free__adress_b">
+                        <input id="adress-free-b" type="text" name="text" placeholder="Куда">
+                    </div>
+                    
+                </div>
+
+                <div class="free__car">
+                    <div class="free__cars">
+                        <input id="radio-1-free" type="radio" name="radio-free" value="5" checked>
+                        <label for="radio-1-free">
+                            <div class="free__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="free__weight">1.5 тонны</div>
+                                <div class="free__price">от 4900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="free__cars">
+                        <input id="radio-2-free" type="radio" name="radio-free" value="6" >
+                        <label for="radio-2-free">
+                            <div class="free__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="free__weight">3 тонны</div>
+                                <div class="free__price">от 7900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="free__cars">
+                        <input id="radio-3-free" type="radio" name="radio-free" value="7">
+                        <label for="radio-3-free">
+                            <div class="free__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="free__weight">5 тонн</div>
+                                <div class="free__price">от 12900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="free__cars">
+                        <input id="radio-4-free" type="radio" name="radio-free" value="8">
+                        <label for="radio-4-free">
+                            <div class="free__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="free__weight">10 тонн</div>
+                                <div class="free__price">от 14900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="free__contats">
+                    <div class="free__name">
+                        <input type="text" placeholder="Как вас зовут" name="name">
+                    </div>
+
+                    <div class="free__telphone">
+                        <input type="text" placeholder="Контактный телефон" name="tel">
+                    </div>
+                </div>
+
+                <div class="free__submit">
+                    <button type="submit">Рассчитать стоимость</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</section>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__contacts">
+            <a href="#">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#footer-logo"></use>
+                </svg>
+            </a>
+            
+
+            <div class="footer__phone">
+                <a href="tel:88005054930">8 (800) 505-49-30</a>
+                <span>звонок по России бесплатный</span>
+            </div>
+
+            <div class="footer__email">
+                <a href="mailto:info@tkbnk.ru">info@tkbnk.ru</a>
+                <span>электронная почта</span>
+            </div>
+
+            <button class="footer__button modal-form-click">Оставить заявку</button>
+        </div>
+
+        <div class="footer__author">
+            <div class="footer__data">
+                <span>ИНН 222107333607</span>
+                <span>Ⓒ 2021 Mover - квартирные перезды</span>
+            </div>
+
+            <div class="footer__policy">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Сайт разработан в Bustlers</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <div class="modal-info">
+    <div class="modal-info__wrapper">
+        <div class="modal-info__block">
+            <h2 class="modal-info__title">Что можно перевезти в грузовке 1,5 тонн?</h2>
+            <div class="modal-info__close">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#modal-info-close"></use>
+                </svg>
+            </div>
+
+            <ul class="modal-info__list">
+                <li class="modal-info__item">Телерадиоприемник</li>
+                <li class="modal-info__item">Портсигар импортный</li>
+                <li class="modal-info__item">Что-то еще</li>
+                <li class="modal-info__item">Тещу</li>
+                <li class="modal-info__item">Холодильник</li>
+                <li class="modal-info__item">Шкаф</li>
+                <li class="modal-info__item">Сервант</li>
+                <li class="modal-info__item">Ковер</li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div class="modal-form">
+    <div class="modal-form__wrapper">
+        <div class="modal-form__form">
+            <div class="modal-form__close">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#modal-form-close"></use>
+                </svg>
+            </div>
+
+            <form action="#">
+                <div class="modal-form__adress">
+                    <div class="modal-form__adress_a">
+                        <input id="adress-a" type="text" name="text" placeholder="Откуда">
+                    </div>
+
+                    <div class="modal-form__adress_b">
+                        <input id="adress-b" type="text" name="text" placeholder="Куда">
+                    </div>
+                    
+                </div>
+
+                <div class="modal-form__car">
+                    <div class="modal-form__cars">
+                        <input id="radio-1-modal" type="radio" name="radio-modal" value="9" checked>
+                        <label for="radio-1-modal">
+                            <div class="modal-form__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="modal-form__weight">1.5 тонны</div>
+                                <div class="modal-form__price">от 4900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="modal-form__cars">
+                        <input id="radio-2-modal" type="radio" name="radio-modal" value="10" >
+                        <label for="radio-2-modal">
+                            <div class="modal-form__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="modal-form__weight">3 тонны</div>
+                                <div class="modal-form__price">от 7900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="modal-form__cars">
+                        <input id="radio-3-modal" type="radio" name="radio-modal" value="11">
+                        <label for="radio-3-modal">
+                            <div class="modal-form__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="modal-form__weight">5 тонн</div>
+                                <div class="modal-form__price">от 12900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="modal-form__cars">
+                        <input id="radio-4-modal" type="radio" name="radio-modal" value="12">
+                        <label for="radio-4-modal">
+                            <div class="modal-form__radio">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#free-trucking"></use>
+                                </svg>
+                                <div class="modal-form__weight">10 тонн</div>
+                                <div class="modal-form__price">от 14900 ₽</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-form__contats">
+                    <div class="modal-form__name">
+                        <input type="text" placeholder="Как вас зовут" name="name">
+                    </div>
+
+                    <div class="modal-form__telphone">
+                        <input type="text" placeholder="Контактный телефон" name="tel">
+                    </div>
+                </div>
+
+                <div class="modal-form__submit">
+                    <button type="submit">Рассчитать стоимость</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+        <script src="js/retina.min.js"></script>
+        <script src="js/lumos-min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

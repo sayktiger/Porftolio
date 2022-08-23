@@ -64,8 +64,8 @@ counters.forEach((item,i) =>{
 const lineBarOne = new ProgressBar.Line(".line-bar-1", {
     strokeWidth: 4,
     trailWidth: 4,
-    from: { color: "#FFA501" },
-    to: { color: "#FFA501" },
+    from: { color: "#d596f2" },
+    to: { color: "#d596f2" },
     text: {
       value: '0',
       className: 'progress-text',
@@ -88,8 +88,8 @@ const lineBarOne = new ProgressBar.Line(".line-bar-1", {
   const lineBarTwo = new ProgressBar.Line(".line-bar-2", {
     strokeWidth: 4,
     trailWidth: 4,
-    from: { color: "#FFA501" },
-    to: { color: "#FFA501" },
+    from: { color: "#d596f2" },
+    to: { color: "#d596f2" },
     text: {
       value: '0',
       className: 'progress-text',
@@ -112,8 +112,8 @@ const lineBarOne = new ProgressBar.Line(".line-bar-1", {
   const lineBarThee = new ProgressBar.Line(".line-bar-3", {
     strokeWidth: 4,
     trailWidth: 4,
-    from: { color: "#FFA501" },
-    to: { color: "#FFA501" },
+    from: { color: "#d596f2" },
+    to: { color: "#d596f2" },
     text: {
       value: '0',
       className: 'progress-text',
@@ -136,8 +136,8 @@ const lineBarOne = new ProgressBar.Line(".line-bar-1", {
   const lineBarFour = new ProgressBar.Line(".line-bar-4", {
     strokeWidth: 4,
     trailWidth: 4,
-    from: { color: "#FFA501" },
-    to: { color: "#FFA501" },
+    from: { color: "#d596f2" },
+    to: { color: "#d596f2" },
     text: {
       value: '0',
       className: 'progress-text',
@@ -160,8 +160,8 @@ const lineBarOne = new ProgressBar.Line(".line-bar-1", {
   const lineBarFive = new ProgressBar.Line(".line-bar-5", {
     strokeWidth: 4,
     trailWidth: 4,
-    from: { color: "#FFA501" },
-    to: { color: "#FFA501" },
+    from: { color: "#d596f2" },
+    to: { color: "#d596f2" },
     text: {
       value: '0',
       className: 'progress-text',
@@ -184,8 +184,8 @@ const lineBarOne = new ProgressBar.Line(".line-bar-1", {
   const lineBarSix = new ProgressBar.Line(".line-bar-6", {
     strokeWidth: 4,
     trailWidth: 4,
-    from: { color: "#FFA501" },
-    to: { color: "#FFA501" },
+    from: { color: "#d596f2" },
+    to: { color: "#d596f2" },
     text: {
       value: '0',
       className: 'progress-text',
@@ -267,6 +267,7 @@ window.addEventListener("DOMContentLoaded", function() {
   input.addEventListener("keydown", mask, false)
 
 });
+
 
 });
 

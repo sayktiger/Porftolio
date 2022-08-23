@@ -65,6 +65,11 @@
     } 
 }
 
+  canvas {
+    display: block;
+  }
+  
+
 //block
 @import "blocks/promo";
 @import "blocks/sidepanel";

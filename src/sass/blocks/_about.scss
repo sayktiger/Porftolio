@@ -10,8 +10,10 @@
     }
     &__photo{
         grid-row: 1/3;
+
         img{
             width: 100%;
+            border-radius: 24px;
         }
     }
     &__descr{
